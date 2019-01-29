@@ -231,13 +231,13 @@
             this.NumericUDSeg10 = new System.Windows.Forms.NumericUpDown();
             this.LabelLEDfromSeg10 = new System.Windows.Forms.Label();
             this.TabKonfig = new System.Windows.Forms.TabPage();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.ComboBoxComPort = new System.Windows.Forms.ComboBox();
             this.ComboBoxArduinoPIN = new System.Windows.Forms.ComboBox();
             this.TextBoxConfLEDCount = new System.Windows.Forms.TextBox();
             this.LabelConfComPort = new System.Windows.Forms.Label();
             this.LabelConfArduinoPIN = new System.Windows.Forms.Label();
             this.LabelConfLEDCount = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.TabHaupt.SuspendLayout();
             this.TabControl.SuspendLayout();
@@ -2721,6 +2721,16 @@
             this.TabKonfig.Text = "Konfiguration";
             this.TabKonfig.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(147, 134);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(463, 244);
+            this.listBox1.TabIndex = 12;
+            // 
             // ComboBoxComPort
             // 
             this.ComboBoxComPort.FormattingEnabled = true;
@@ -2741,9 +2751,7 @@
             "D5 (14)",
             "D6 (12)",
             "D7 (13)",
-            "D8 (15)",
-            "",
-            ""});
+            "D8 (15)"});
             this.ComboBoxArduinoPIN.Location = new System.Drawing.Point(147, 53);
             this.ComboBoxArduinoPIN.Name = "ComboBoxArduinoPIN";
             this.ComboBoxArduinoPIN.Size = new System.Drawing.Size(99, 21);
@@ -2785,86 +2793,6 @@
             this.LabelConfLEDCount.Size = new System.Drawing.Size(131, 18);
             this.LabelConfLEDCount.TabIndex = 0;
             this.LabelConfLEDCount.Text = "Anzahl der LED\'S";
-            // 
-            // listBox1
-            // 
-            this.listBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
-            "Static - No blinking. Just plain old static light.",
-            "Blink - Normal blinking. 50% on/off time.",
-            "Breath - Does the \"standby-breathing\" of well known i-Devices. Fixed Speed.",
-            "Color Wipe - Lights all LEDs after each other up. Then turns them in that order o" +
-                "ff. Repeat.",
-            "Color Wipe Inverse - Same as Color Wipe, except swaps on/off colors.",
-            "Color Wipe Reverse - Lights all LEDs after each other up. Then turns them in reve" +
-                "rse order off. Repeat.",
-            "Color Wipe Reverse Inverse - Same as Color Wipe Reverse, except swaps on/off colo" +
-                "rs.",
-            "Color Wipe Random - Turns all LEDs after each other to a random color. Then start" +
-                "s over with another color.",
-            "Random Color - Lights all LEDs in one random color up. Then switches them to the " +
-                "next random color.",
-            "Single Dynamic - Lights every LED in a random color. Changes one random LED after" +
-                " the other to a random color.",
-            "Multi Dynamic - Lights every LED in a random color. Changes all LED at the same t" +
-                "ime to new random colors.",
-            "Rainbow - Cycles all LEDs at once through a rainbow.",
-            "Rainbow Cycle - Cycles a rainbow over the entire string of LEDs.",
-            "Scan - Runs a single pixel back and forth.",
-            "Dual Scan - Runs two pixel back and forth in opposite directions.",
-            "Fade - Fades the LEDs on and (almost) off again.",
-            "Theater Chase - Theatre-style crawling lights. Inspired by the Adafruit examples." +
-                "",
-            "Theater Chase Rainbow - Theatre-style crawling lights with rainbow effect. Inspir" +
-                "ed by the Adafruit examples.",
-            "Running Lights - Running lights effect with smooth sine transition.",
-            "Twinkle - Blink several LEDs on, reset, repeat.",
-            "Twinkle Random - Blink several LEDs in random colors on, reset, repeat.",
-            "Twinkle Fade - Blink several LEDs on, fading out.",
-            "Twinkle Fade Random - Blink several LEDs in random colors on, fading out.",
-            "Sparkle - Blinks one LED at a time.",
-            "Flash Sparkle - Lights all LEDs in the selected color. Flashes single white pixel" +
-                "s randomly.",
-            "Hyper Sparkle - Like flash sparkle. With more flash.",
-            "Strobe - Classic Strobe effect.",
-            "Strobe Rainbow - Classic Strobe effect. Cycling through the rainbow.",
-            "Multi Strobe - Strobe effect with different strobe count and pause, controlled by" +
-                " speed setting.",
-            "Blink Rainbow - Classic Blink effect. Cycling through the rainbow.",
-            "Chase White - Color running on white.",
-            "Chase Color - White running on color.",
-            "Chase Random - White running followed by random color.",
-            "Chase Rainbow - White running on rainbow.",
-            "Chase Flash - White flashes running on color.",
-            "Chase Flash Random - White flashes running, followed by random color.",
-            "Chase Rainbow White - Rainbow running on white.",
-            "Chase Blackout - Black running on color.",
-            "Chase Blackout Rainbow - Black running on rainbow.",
-            "Color Sweep Random - Random color introduced alternating from start and end of st" +
-                "rip.",
-            "Running Color - Alternating color/white pixels running.",
-            "Running Red Blue - Alternating red/blue pixels running.",
-            "Running Random - Random colored pixels running.",
-            "Larson Scanner - K.I.T.T.",
-            "Comet - Firing comets from one end.",
-            "Fireworks - Firework sparks.",
-            "Fireworks Random - Random colored firework sparks.",
-            "Merry Christmas - Alternating green/red pixels running.",
-            "Fire Flicker - Fire flickering effect. Like in harsh wind.",
-            "Fire Flicker (soft) - Fire flickering effect. Runs slower/softer.",
-            "Fire Flicker (intense) - Fire flickering effect. More range of color.",
-            "Circus Combustus - Alternating white/red/black pixels running.",
-            "Halloween - Alternating orange/purple pixels running.",
-            "Bicolor Chase - Two LEDs running on a background color (set three colors).",
-            "Tricolor Chase - Alternating three color pixels running (set three colors).",
-            "ICU - Two eyes looking around.",
-            "Custom - Up to four user created custom effects."});
-            this.listBox1.Location = new System.Drawing.Point(147, 134);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(463, 244);
-            this.listBox1.TabIndex = 12;
             // 
             // FormWS812
             // 

@@ -12,6 +12,35 @@ namespace WS2812b
 {
     public partial class FormWS812 : Form
     {
+
+        
+
+
+
+        public void PanelColorChange(string SegNumber)
+        {
+
+
+            string RGBPanel = "PanelSeg" + SegNumber;
+            string TrackBarRed = "TrackBarRedSeg" + SegNumber;
+            string TrackBarGreen = "TrackBarGreenSeg" + SegNumber;
+            string TrackBarBlue = "TrackBarBlueSeg" + SegNumber;
+            string LabelRed = "LabelValueRedSeg" + SegNumber;
+            string LabelGreen = "LabelValueGreenSeg" + SegNumber;
+            string LabelBlue = "LabelValueBlueSeg" + SegNumber;
+
+            
+            /*
+            // Panel mit der Hintergrundfarbe aus den eingestellten RGB Werten fülen
+            RGBPanel.BackColor = Color.FromArgb(TrackBarRed.Value, TrackBarGreen.Value, TrackBarBlue.Value);
+            //Hinter den Schieberegler die Werte schreiben
+            LabelRed.Text = TrackBarRed.Value.ToString();
+            LabelGreen.Text = TrackBarGreen.Value.ToString();
+            LabelBlue.Text = TrackBarBlue.Value.ToString();
+            */
+        }
+
+
         public FormWS812()
         {
             InitializeComponent();
@@ -21,19 +50,20 @@ namespace WS2812b
             {
                 ComboBoxComPort.Items.Add(s);
             }
-        
-                   
 
-        }
+            
+    }
 
         private void ChangePanelColorSeg1(object sender, EventArgs e)
         {
-        // Panel mit der Hintergrundfarbe aus den eingestellten RGB Werten fülen
-        PanelSeg1.BackColor = Color.FromArgb(TrackBarRedSeg1.Value, TrackBarGreenSeg1.Value, TrackBarBlueSeg1.Value);
-        //Hinter den Schieberegler die Werte schreiben
-        LabelValueRedSeg1.Text = TrackBarRedSeg1.Value.ToString();
-        LabelValueGreenSeg1.Text = TrackBarGreenSeg1.Value.ToString();
-        LabelValueBlueSeg1.Text = TrackBarBlueSeg1.Value.ToString();
+            // Panel mit der Hintergrundfarbe aus den eingestellten RGB Werten fülen
+            PanelSeg1.BackColor = Color.FromArgb(TrackBarRedSeg1.Value, TrackBarGreenSeg1.Value, TrackBarBlueSeg1.Value);
+            //Hinter den Schieberegler die Werte schreiben
+            LabelValueRedSeg1.Text = TrackBarRedSeg1.Value.ToString();
+            LabelValueGreenSeg1.Text = TrackBarGreenSeg1.Value.ToString();
+            LabelValueBlueSeg1.Text = TrackBarBlueSeg1.Value.ToString();
+
+            PanelColorChange("1");
         }
 
         private void ChangePanelColorSeg2(object sender, EventArgs e)
