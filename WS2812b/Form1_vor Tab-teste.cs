@@ -13,14 +13,13 @@ namespace WS2812b
     public partial class FormWS812 : Form
     {
 
-        
-
-
-
         public void PanelColorChange(string SegNumber)
+            /*Erster Veruch, aber keine Übergabe eines Wertes,
+             hier sollte eine Methode entstehen, die einen numerischen Wert des aktuellen 
+             Segmentes entgegen nimmt und diesen dann verarbeitet
+             */
+             
         {
-
-
             string RGBPanel = "PanelSeg" + SegNumber;
             string TrackBarRed = "TrackBarRedSeg" + SegNumber;
             string TrackBarGreen = "TrackBarGreenSeg" + SegNumber;
@@ -29,7 +28,7 @@ namespace WS2812b
             string LabelGreen = "LabelValueGreenSeg" + SegNumber;
             string LabelBlue = "LabelValueBlueSeg" + SegNumber;
 
-            
+
             /*
             // Panel mit der Hintergrundfarbe aus den eingestellten RGB Werten fülen
             RGBPanel.BackColor = Color.FromArgb(TrackBarRed.Value, TrackBarGreen.Value, TrackBarBlue.Value);
@@ -40,8 +39,33 @@ namespace WS2812b
             */
         }
 
+        public void ChangeColorSelectedPanel(string selPanel, string selTrackR, string selTrackG, string selTrackB)
+        {
 
-        public FormWS812()
+            /*2. Veruch mit der Find funktion von Daniel
+            //Auswal der Übergebenden Trackbars
+            TrackBar selectedTrackBarRed = (TrackBar).Controls.Find(selTrackR,false);
+            TrackBar selectedTrackBarGed = (TrackBar).Controls.Find(selTrackG,false);
+            TrackBar selectedTrackBarBed = (TrackBar).Controls.Find(selTrackB,false);
+
+            //Auswahl des Übergebenden Panels
+            Panel selectedPanel = (Panel)Controls.Find(selPanel,false);
+            //Panelbackgroundfarbe mit den ubergebenden RGB Werten schrieben
+            selectedPanel.BackColor = Color.Color.FromArgb(selectedTrackBarRed.Value, selectedTrackBarGed.Value, selectedTrackBarBed.Value);
+            */
+            
+
+
+
+            // Panel selPanel = (Panel)this.Controls.Find(PanelSeg1.Value, false)[0];
+            //selPanel.BackColor = Color.Green;
+            
+
+        }
+
+
+
+                public FormWS812()
         {
             InitializeComponent();
 
@@ -50,12 +74,16 @@ namespace WS2812b
             {
                 ComboBoxComPort.Items.Add(s);
             }
+        }
+
+
+
 
             
-    }
 
         private void ChangePanelColorSeg1(object sender, EventArgs e)
         {
+            
             // Panel mit der Hintergrundfarbe aus den eingestellten RGB Werten fülen
             PanelSeg1.BackColor = Color.FromArgb(TrackBarRedSeg1.Value, TrackBarGreenSeg1.Value, TrackBarBlueSeg1.Value);
             //Hinter den Schieberegler die Werte schreiben
@@ -64,6 +92,7 @@ namespace WS2812b
             LabelValueBlueSeg1.Text = TrackBarBlueSeg1.Value.ToString();
 
             PanelColorChange("1");
+            
         }
 
         private void ChangePanelColorSeg2(object sender, EventArgs e)

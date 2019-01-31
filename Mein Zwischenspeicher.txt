@@ -1,0 +1,50 @@
+public void ChangeColorSelectedPanel(string selPanel, string selTrackR, string selTrackG, string selTrackB)
+        {
+
+
+            //Auswal der Übergebenden Trackbars
+            TrackBar selectedTrackBarRed = (TrackBar).Controls.Find(selTrackR);
+            TrackBar selectedTrackBarGed = (TrackBar).Controls.Find(selTrackG);
+            TrackBar selectedTrackBarBed = (TrackBar).Controls.Find(selTrackB);
+
+            //auwahl des Übergebenden Panels
+            Panel selectedPanel = (Panel)Controls.Find(selPanel);
+            //Panelbackgroundfarbe mit den ubergebenden RGB Werten schrieben
+            selectedPanel.BackColor = Color.Color.FromArgb(selectedTrackBarRed.Value, selectedTrackBarGed.Value, selectedTrackBarBed.Value);
+
+        }
+		
+		
+		ChangeColorSelectedPanel (PanelSeg1, TrackBarRedSeg1, TrackBarGreenSeg1, TrackBarBlueSeg1)
+		
+		Panel selPanel = (Panel)this.Controls.Find(PanelSeg1.Value, false)[0];
+            selPanel.BackColor = Color.Green;
+            
+			
+			
+			
+			
+			
+			
+			 public void PanelColorChange(string SegNumber)
+        {
+
+
+            string RGBPanel = "PanelSeg" + SegNumber;
+            string TrackBarRed = "TrackBarRedSeg" + SegNumber;
+            string TrackBarGreen = "TrackBarGreenSeg" + SegNumber;
+            string TrackBarBlue = "TrackBarBlueSeg" + SegNumber;
+            string LabelRed = "LabelValueRedSeg" + SegNumber;
+            string LabelGreen = "LabelValueGreenSeg" + SegNumber;
+            string LabelBlue = "LabelValueBlueSeg" + SegNumber;
+
+            
+            /*
+            // Panel mit der Hintergrundfarbe aus den eingestellten RGB Werten fülen
+            RGBPanel.BackColor = Color.FromArgb(TrackBarRed.Value, TrackBarGreen.Value, TrackBarBlue.Value);
+            //Hinter den Schieberegler die Werte schreiben
+            LabelRed.Text = TrackBarRed.Value.ToString();
+            LabelGreen.Text = TrackBarGreen.Value.ToString();
+            LabelBlue.Text = TrackBarBlue.Value.ToString();
+            */
+        }
