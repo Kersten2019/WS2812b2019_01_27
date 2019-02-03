@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <HW-Settings>
+    <MaxLEDs>300</MaxLEDs>
+    <ArduinoPin>8</ArduinoPin>
+    <ComPort>7</ComPort>
+  </HW-Settings>
+  <SegmentSettings>
+    <SegmentFirst>0</SegmentFirst>
+    <SegmentLast>9</SegmentLast>
+    <SegmentCount>10</SegmentCount>
+  </SegmentSettings>  
+  <ModiSettings>
+    <ModusFirst>0</ModusFirst>
+    <ModusLast>59</ModusLast>
+    <ModusCount>60</ModusCount>
+  </ModiSettings>
+  <Segments>  
+    <StartSeg0>0</StartSeg0>
+    <EndsSeg0>0</EndsSeg0>
+    <StartSeg1>0</StartSeg1>
+    <EndsSeg1>0</EndsSeg1>
+    <StartSeg2>0</StartSeg2>
+    <EndsSeg2>0</EndsSeg2>
+    <StartSeg3>0</StartSeg3>
+    <EndsSeg3>0</EndsSeg3>
+    <StartSeg4>0</StartSeg4>
+    <EndsSeg4>0</EndsSeg4>
+    <StartSeg5>0</StartSeg5>
+    <EndsSeg5>0</EndsSeg5>
+    <StartSeg6>0</StartSeg6>
+    <EndsSeg6>0</EndsSeg6>
+    <StartSeg7>0</StartSeg7>
+    <EndsSeg7>0</EndsSeg7>
+    <StartSeg8>0</StartSeg8>
+    <EndsSeg8>0</EndsSeg8>
+    <StartSeg9>0</StartSeg9>
+    <EndsSeg9>0</EndsSeg9>
+  </Segments>
+  <Modi>
+    <Modus0>Static - No blinking. Just plain old static light.</Modus0>
+    <Modus1>Blink - Normal blinking. 50% on/off time.</Modus1>
+    <Modus2>Breath - Does the "standby-breathing" of well known i-Devices. Fixed Speed.</Modus2>
+    <Modus3>Color Wipe - Lights all LEDs after each other up. Then turns them in that order off. Repeat.</Modus3>
+    <Modus4>Color Wipe Inverse - Same as Color Wipe, except swaps on/off colors.</Modus4>
+    <Modus5>Color Wipe Reverse - Lights all LEDs after each other up. Then turns them in reverse order off. Repeat.</Modus5>
+    <Modus6>Color Wipe Reverse Inverse - Same as Color Wipe Reverse, except swaps on/off colors.</Modus6>
+    <Modus7>Color Wipe Random - Turns all LEDs after each other to a random color. Then starts over with another color.</Modus7>
+    <Modus8>Random Color - Lights all LEDs in one random color up. Then switches them to the next random color.</Modus8>
+    <Modus9>Single Dynamic - Lights every LED in a random color. Changes one random LED after the other to a random color.</Modus9>
+    <Modus10>Multi Dynamic - Lights every LED in a random color. Changes all LED at the same time to new random colors.</Modus10>
+    <Modus11>Rainbow - Cycles all LEDs at once through a rainbow.</Modus11>
+    <Modus12>Rainbow Cycle - Cycles a rainbow over the entire string of LEDs.</Modus12>
+    <Modus13>Scan - Runs a single pixel back and forth.</Modus13>
+    <Modus14>Dual Scan - Runs two pixel back and forth in opposite directions.</Modus14>
+    <Modus15>Fade - Fades the LEDs on and (almost) off again.</Modus15>
+    <Modus16>Theater Chase - Theatre-style crawling lights. Inspired by the Adafruit examples.</Modus16>
+    <Modus17>Theater Chase Rainbow - Theatre-style crawling lights with rainbow effect. Inspired by the Adafruit examples.</Modus17>
+    <Modus18>Running Lights - Running lights effect with smooth sine transition.</Modus18>
+    <Modus19>Twinkle - Blink several LEDs on, reset, repeat.</Modus19>
+    <Modus20>Twinkle Random - Blink several LEDs in random colors on, reset, repeat.</Modus20>
+    <Modus21>Twinkle Fade - Blink several LEDs on, fading out.</Modus21>
+    <Modus22>Twinkle Fade Random - Blink several LEDs in random colors on, fading out.</Modus22>
+    <Modus23>Sparkle - Blinks one LED at a time.</Modus23>
+    <Modus24>Flash Sparkle - Lights all LEDs in the selected color. Flashes single white pixels randomly.</Modus24>
+    <Modus25>Hyper Sparkle - Like flash sparkle. With more flash.</Modus25>
+    <Modus26>Strobe - Classic Strobe effect.</Modus26>
+    <Modus27>Strobe Rainbow - Classic Strobe effect. Cycling through the rainbow.</Modus27>
+    <Modus28>Multi Strobe - Strobe effect with different strobe count and pause, controlled by speed setting.</Modus28>
+    <Modus29>Blink Rainbow - Classic Blink effect. Cycling through the rainbow.</Modus29>
+    <Modus30>Chase White - Color running on white.</Modus30>
+    <Modus31>Chase Color - White running on color.</Modus31>
+    <Modus32>Chase Random - White running followed by random color.</Modus32>
+    <Modus33>Chase Rainbow - White running on rainbow.</Modus33>
+    <Modus34>Chase Flash - White flashes running on color.</Modus34>
+    <Modus35>Chase Flash Random - White flashes running, followed by random color.</Modus35>
+    <Modus36>Chase Rainbow White - Rainbow running on white.</Modus36>
+    <Modus37>Chase Blackout - Black running on color.</Modus37>
+    <Modus38>Chase Blackout Rainbow - Black running on rainbow.</Modus38>
+    <Modus39>Color Sweep Random - Random color introduced alternating from start and end of strip.</Modus39>
+    <Modus40>Running Color - Alternating color/white pixels running.</Modus40>
+    <Modus41>Running Red Blue - Alternating red/blue pixels running.</Modus41>
+    <Modus42>Running Random - Random colored pixels running.</Modus42>
+    <Modus43>Larson Scanner - K.I.T.T.</Modus43>
+    <Modus44>Comet - Firing comets from one end.</Modus44>
+    <Modus45>Fireworks - Firework sparks.</Modus45>
+    <Modus46>Fireworks Random - Random colored firework sparks.</Modus46>
+    <Modus47>Merry Christmas - Alternating green/red pixels running.</Modus47>
+    <Modus48>Fire Flicker - Fire flickering effect. Like in harsh wind.</Modus48>
+    <Modus49>Fire Flicker (soft) - Fire flickering effect. Runs slower/softer.</Modus49>
+    <Modus50>Fire Flicker (intense) - Fire flickering effect. More range of color.</Modus50>
+    <Modus51>Circus Combustus - Alternating white/red/black pixels running.</Modus51>
+    <Modus52>Halloween - Alternating orange/purple pixels running.</Modus52>
+    <Modus53>Bicolor Chase - Two LEDs running on a background color (set three colors).</Modus53>
+    <Modus54>Tricolor Chase - Alternating three color pixels running (set three colors).</Modus54>
+    <Modus55>ICU - Two eyes looking around.</Modus55>
+    <Modus56>Custom1 - Up to four user created custom effects.</Modus56>
+    <Modus57>Custom2</Modus57>
+    <Modus58>Custom3</Modus58>
+    <Modus59>Custom4</Modus59>
+  </Modi>
+ </Config>

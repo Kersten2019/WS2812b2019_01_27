@@ -29,18 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWS812));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dateiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.öffnenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.speichernToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.speichernAlsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TabHaupt = new System.Windows.Forms.TabControl();
             this.TabControl = new System.Windows.Forms.TabPage();
-            this.LabelSegCount = new System.Windows.Forms.Label();
-            this.TrackBarSegCount = new System.Windows.Forms.TrackBar();
             this.TabSegmente = new System.Windows.Forms.TabControl();
             this.TabSeg1 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegAddSeg1 = new System.Windows.Forms.Button();
             this.TrackBarBrightSeg1 = new System.Windows.Forms.TrackBar();
             this.TrackBarSpeedSeg1 = new System.Windows.Forms.TrackBar();
             this.ListBoxModiSeg1 = new System.Windows.Forms.ListBox();
@@ -58,8 +51,12 @@
             this.LabelColorGreenSeg1 = new System.Windows.Forms.Label();
             this.LabelValueRedSeg1 = new System.Windows.Forms.Label();
             this.LabelColorRedSeg1 = new System.Windows.Forms.Label();
+            this.LabelLEDtoSeg1 = new System.Windows.Forms.Label();
             this.LabelLEDfromSeg1 = new System.Windows.Forms.Label();
             this.TabSeg2 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegDelSeg2 = new System.Windows.Forms.Button();
+            this.ButtonLEDSegAddSeg2 = new System.Windows.Forms.Button();
+            this.LabelLEDtoSeg2 = new System.Windows.Forms.Label();
             this.ListBoxModiSeg2 = new System.Windows.Forms.ListBox();
             this.LabelModiSeg2 = new System.Windows.Forms.Label();
             this.TrackBarBrightSeg2 = new System.Windows.Forms.TrackBar();
@@ -79,6 +76,9 @@
             this.LabelColorRedSeg2 = new System.Windows.Forms.Label();
             this.LabelLEDfromSeg2 = new System.Windows.Forms.Label();
             this.TabSeg3 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegDelSeg3 = new System.Windows.Forms.Button();
+            this.ButtonLEDSegAddSeg3 = new System.Windows.Forms.Button();
+            this.LabelLEDtoSeg3 = new System.Windows.Forms.Label();
             this.ListBoxModiSeg3 = new System.Windows.Forms.ListBox();
             this.LabelModiSeg3 = new System.Windows.Forms.Label();
             this.TrackBarBrightSeg3 = new System.Windows.Forms.TrackBar();
@@ -98,6 +98,9 @@
             this.LabelColorRedSeg3 = new System.Windows.Forms.Label();
             this.LabelLEDfromSeg3 = new System.Windows.Forms.Label();
             this.TabSeg4 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegDelSeg4 = new System.Windows.Forms.Button();
+            this.ButtonLEDSegAddSeg4 = new System.Windows.Forms.Button();
+            this.LabelLEDtoSeg4 = new System.Windows.Forms.Label();
             this.ListBoxModiSeg4 = new System.Windows.Forms.ListBox();
             this.LabelModiSeg4 = new System.Windows.Forms.Label();
             this.TrackBarBrightSeg4 = new System.Windows.Forms.TrackBar();
@@ -117,6 +120,9 @@
             this.LabelColorRedSeg4 = new System.Windows.Forms.Label();
             this.LabelLEDfromSeg4 = new System.Windows.Forms.Label();
             this.TabSeg5 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegDelSeg5 = new System.Windows.Forms.Button();
+            this.ButtonLEDSegAddSeg5 = new System.Windows.Forms.Button();
+            this.LabelLEDtoSeg5 = new System.Windows.Forms.Label();
             this.ListBoxModiSeg5 = new System.Windows.Forms.ListBox();
             this.LabelModiSeg5 = new System.Windows.Forms.Label();
             this.TrackBarBrightSeg5 = new System.Windows.Forms.TrackBar();
@@ -136,6 +142,9 @@
             this.LabelColorRedSeg5 = new System.Windows.Forms.Label();
             this.LabelLEDfromSeg5 = new System.Windows.Forms.Label();
             this.TabSeg6 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegDelSeg6 = new System.Windows.Forms.Button();
+            this.ButtonLEDSegAddSeg6 = new System.Windows.Forms.Button();
+            this.LabelLEDtoSeg6 = new System.Windows.Forms.Label();
             this.ListBoxModiSeg6 = new System.Windows.Forms.ListBox();
             this.LabelModiSeg6 = new System.Windows.Forms.Label();
             this.TrackBarBrightSeg6 = new System.Windows.Forms.TrackBar();
@@ -155,6 +164,9 @@
             this.LabelColorRedSeg6 = new System.Windows.Forms.Label();
             this.LabelLEDfromSeg6 = new System.Windows.Forms.Label();
             this.TabSeg7 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegDelSeg7 = new System.Windows.Forms.Button();
+            this.ButtonLEDSegAddSeg7 = new System.Windows.Forms.Button();
+            this.LabelLEDtoSeg7 = new System.Windows.Forms.Label();
             this.ListBoxModiSeg7 = new System.Windows.Forms.ListBox();
             this.LabelModiSeg7 = new System.Windows.Forms.Label();
             this.TrackBarBrightSeg7 = new System.Windows.Forms.TrackBar();
@@ -174,6 +186,9 @@
             this.NumericUDSeg7 = new System.Windows.Forms.NumericUpDown();
             this.LabelLEDfromSeg7 = new System.Windows.Forms.Label();
             this.TabSeg8 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegDelSeg8 = new System.Windows.Forms.Button();
+            this.ButtonLEDSegAddSeg8 = new System.Windows.Forms.Button();
+            this.LabelLEDtoSeg8 = new System.Windows.Forms.Label();
             this.ListBoxModiSeg8 = new System.Windows.Forms.ListBox();
             this.LabelModiSeg8 = new System.Windows.Forms.Label();
             this.TrackBarBrightSeg8 = new System.Windows.Forms.TrackBar();
@@ -193,6 +208,9 @@
             this.NumericUDSeg8 = new System.Windows.Forms.NumericUpDown();
             this.LabelLEDfromSeg8 = new System.Windows.Forms.Label();
             this.TabSeg9 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegDelSeg9 = new System.Windows.Forms.Button();
+            this.ButtonLEDSegAddSeg9 = new System.Windows.Forms.Button();
+            this.LabelLEDtoSeg9 = new System.Windows.Forms.Label();
             this.ListBoxModiSeg9 = new System.Windows.Forms.ListBox();
             this.LabelModiSeg9 = new System.Windows.Forms.Label();
             this.TrackBarBrightSeg9 = new System.Windows.Forms.TrackBar();
@@ -212,6 +230,8 @@
             this.NumericUDSeg9 = new System.Windows.Forms.NumericUpDown();
             this.LabelLEDfromSeg9 = new System.Windows.Forms.Label();
             this.TabSeg10 = new System.Windows.Forms.TabPage();
+            this.ButtonLEDSegDelSeg10 = new System.Windows.Forms.Button();
+            this.LabelLEDtoSeg10 = new System.Windows.Forms.Label();
             this.ListBoxModiSeg10 = new System.Windows.Forms.ListBox();
             this.LabelModiSeg10 = new System.Windows.Forms.Label();
             this.TrackBarBrightSeg10 = new System.Windows.Forms.TrackBar();
@@ -238,10 +258,13 @@
             this.LabelConfComPort = new System.Windows.Forms.Label();
             this.LabelConfArduinoPIN = new System.Windows.Forms.Label();
             this.LabelConfLEDCount = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.öffnenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.speichernToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.speichernToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TabHaupt.SuspendLayout();
             this.TabControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackBarSegCount)).BeginInit();
             this.TabSegmente.SuspendLayout();
             this.TabSeg1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TrackBarBrightSeg1)).BeginInit();
@@ -314,52 +337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.TrackBarRedSeg10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericUDSeg10)).BeginInit();
             this.TabKonfig.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dateiToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(730, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // dateiToolStripMenuItem
-            // 
-            this.dateiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.öffnenToolStripMenuItem,
-            this.speichernToolStripMenuItem,
-            this.speichernAlsToolStripMenuItem,
-            this.beendenToolStripMenuItem});
-            this.dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
-            this.dateiToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.dateiToolStripMenuItem.Text = "Datei";
-            // 
-            // öffnenToolStripMenuItem
-            // 
-            this.öffnenToolStripMenuItem.Name = "öffnenToolStripMenuItem";
-            this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
-            this.öffnenToolStripMenuItem.Text = "Öffnen";
-            // 
-            // speichernToolStripMenuItem
-            // 
-            this.speichernToolStripMenuItem.Name = "speichernToolStripMenuItem";
-            this.speichernToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
-            this.speichernToolStripMenuItem.Text = "Speichern";
-            // 
-            // speichernAlsToolStripMenuItem
-            // 
-            this.speichernAlsToolStripMenuItem.Name = "speichernAlsToolStripMenuItem";
-            this.speichernAlsToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
-            this.speichernAlsToolStripMenuItem.Text = "Speichern als";
-            // 
-            // beendenToolStripMenuItem
-            // 
-            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
-            this.beendenToolStripMenuItem.Text = "Beenden";
             // 
             // TabHaupt
             // 
@@ -373,8 +352,6 @@
             // 
             // TabControl
             // 
-            this.TabControl.Controls.Add(this.LabelSegCount);
-            this.TabControl.Controls.Add(this.TrackBarSegCount);
             this.TabControl.Controls.Add(this.TabSegmente);
             this.TabControl.Location = new System.Drawing.Point(4, 22);
             this.TabControl.Name = "TabControl";
@@ -383,26 +360,6 @@
             this.TabControl.TabIndex = 0;
             this.TabControl.Text = "Steuerung";
             this.TabControl.UseVisualStyleBackColor = true;
-            // 
-            // LabelSegCount
-            // 
-            this.LabelSegCount.AutoSize = true;
-            this.LabelSegCount.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelSegCount.Location = new System.Drawing.Point(275, 18);
-            this.LabelSegCount.Name = "LabelSegCount";
-            this.LabelSegCount.Size = new System.Drawing.Size(157, 18);
-            this.LabelSegCount.TabIndex = 2;
-            this.LabelSegCount.Text = "Anzahl der Segmente";
-            // 
-            // TrackBarSegCount
-            // 
-            this.TrackBarSegCount.BackColor = System.Drawing.Color.White;
-            this.TrackBarSegCount.Location = new System.Drawing.Point(12, 53);
-            this.TrackBarSegCount.Minimum = 1;
-            this.TrackBarSegCount.Name = "TrackBarSegCount";
-            this.TrackBarSegCount.Size = new System.Drawing.Size(692, 45);
-            this.TrackBarSegCount.TabIndex = 1;
-            this.TrackBarSegCount.Value = 1;
             // 
             // TabSegmente
             // 
@@ -416,7 +373,7 @@
             this.TabSegmente.Controls.Add(this.TabSeg8);
             this.TabSegmente.Controls.Add(this.TabSeg9);
             this.TabSegmente.Controls.Add(this.TabSeg10);
-            this.TabSegmente.Location = new System.Drawing.Point(12, 104);
+            this.TabSegmente.Location = new System.Drawing.Point(12, 18);
             this.TabSegmente.Name = "TabSegmente";
             this.TabSegmente.SelectedIndex = 0;
             this.TabSegmente.Size = new System.Drawing.Size(696, 722);
@@ -424,6 +381,7 @@
             // 
             // TabSeg1
             // 
+            this.TabSeg1.Controls.Add(this.ButtonLEDSegAddSeg1);
             this.TabSeg1.Controls.Add(this.TrackBarBrightSeg1);
             this.TabSeg1.Controls.Add(this.TrackBarSpeedSeg1);
             this.TabSeg1.Controls.Add(this.ListBoxModiSeg1);
@@ -441,14 +399,26 @@
             this.TabSeg1.Controls.Add(this.LabelColorGreenSeg1);
             this.TabSeg1.Controls.Add(this.LabelValueRedSeg1);
             this.TabSeg1.Controls.Add(this.LabelColorRedSeg1);
+            this.TabSeg1.Controls.Add(this.LabelLEDtoSeg1);
             this.TabSeg1.Controls.Add(this.LabelLEDfromSeg1);
             this.TabSeg1.Location = new System.Drawing.Point(4, 22);
             this.TabSeg1.Name = "TabSeg1";
             this.TabSeg1.Padding = new System.Windows.Forms.Padding(3);
             this.TabSeg1.Size = new System.Drawing.Size(688, 696);
             this.TabSeg1.TabIndex = 0;
-            this.TabSeg1.Text = "Segment 01";
+            this.TabSeg1.Text = "Segment 1";
             this.TabSeg1.UseVisualStyleBackColor = true;
+            // 
+            // ButtonLEDSegAddSeg1
+            // 
+            this.ButtonLEDSegAddSeg1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegAddSeg1.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegAddSeg1.Name = "ButtonLEDSegAddSeg1";
+            this.ButtonLEDSegAddSeg1.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegAddSeg1.TabIndex = 13;
+            this.ButtonLEDSegAddSeg1.Text = "ändern";
+            this.ButtonLEDSegAddSeg1.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegAddSeg1.Click += new System.EventHandler(this.AddSeg2);
             // 
             // TrackBarBrightSeg1
             // 
@@ -534,16 +504,33 @@
             // 
             // NumericUDSeg1
             // 
+            this.NumericUDSeg1.BackColor = System.Drawing.SystemColors.Window;
             this.NumericUDSeg1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg1.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg1.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.NumericUDSeg1.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg1.Maximum = new decimal(new int[] {
             1000,
+            0,
+            0,
+            0});
+            this.NumericUDSeg1.Minimum = new decimal(new int[] {
+            5,
             0,
             0,
             0});
             this.NumericUDSeg1.Name = "NumericUDSeg1";
             this.NumericUDSeg1.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg1.TabIndex = 1;
+            this.NumericUDSeg1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericUDSeg1.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             // 
             // LabelValueBlueSeg1
             // 
@@ -640,18 +627,31 @@
             this.LabelColorRedSeg1.TabIndex = 0;
             this.LabelColorRedSeg1.Text = "Rot";
             // 
+            // LabelLEDtoSeg1
+            // 
+            this.LabelLEDtoSeg1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg1.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg1.Name = "LabelLEDtoSeg1";
+            this.LabelLEDtoSeg1.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg1.TabIndex = 0;
+            this.LabelLEDtoSeg1.Text = "bis LED";
+            this.LabelLEDtoSeg1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // LabelLEDfromSeg1
             // 
-            this.LabelLEDfromSeg1.AutoSize = true;
             this.LabelLEDfromSeg1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg1.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg1.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg1.Name = "LabelLEDfromSeg1";
-            this.LabelLEDfromSeg1.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg1.Size = new System.Drawing.Size(70, 22);
             this.LabelLEDfromSeg1.TabIndex = 0;
-            this.LabelLEDfromSeg1.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg1.Text = "Von LED 1";
+            this.LabelLEDfromSeg1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabSeg2
             // 
+            this.TabSeg2.Controls.Add(this.ButtonLEDSegDelSeg2);
+            this.TabSeg2.Controls.Add(this.ButtonLEDSegAddSeg2);
+            this.TabSeg2.Controls.Add(this.LabelLEDtoSeg2);
             this.TabSeg2.Controls.Add(this.ListBoxModiSeg2);
             this.TabSeg2.Controls.Add(this.LabelModiSeg2);
             this.TabSeg2.Controls.Add(this.TrackBarBrightSeg2);
@@ -675,11 +675,47 @@
             this.TabSeg2.Padding = new System.Windows.Forms.Padding(3);
             this.TabSeg2.Size = new System.Drawing.Size(688, 696);
             this.TabSeg2.TabIndex = 1;
-            this.TabSeg2.Text = "Segment 02";
+            this.TabSeg2.Text = "Segment 2";
             this.TabSeg2.UseVisualStyleBackColor = true;
+            // 
+            // ButtonLEDSegDelSeg2
+            // 
+            this.ButtonLEDSegDelSeg2.Enabled = false;
+            this.ButtonLEDSegDelSeg2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegDelSeg2.Location = new System.Drawing.Point(309, 12);
+            this.ButtonLEDSegDelSeg2.Name = "ButtonLEDSegDelSeg2";
+            this.ButtonLEDSegDelSeg2.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegDelSeg2.TabIndex = 47;
+            this.ButtonLEDSegDelSeg2.Text = "Löschen";
+            this.ButtonLEDSegDelSeg2.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegDelSeg2.Click += new System.EventHandler(this.DelSeg2);
+            // 
+            // ButtonLEDSegAddSeg2
+            // 
+            this.ButtonLEDSegAddSeg2.Enabled = false;
+            this.ButtonLEDSegAddSeg2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegAddSeg2.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegAddSeg2.Name = "ButtonLEDSegAddSeg2";
+            this.ButtonLEDSegAddSeg2.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegAddSeg2.TabIndex = 33;
+            this.ButtonLEDSegAddSeg2.Text = "ändern";
+            this.ButtonLEDSegAddSeg2.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegAddSeg2.Click += new System.EventHandler(this.AddSeg3);
+            // 
+            // LabelLEDtoSeg2
+            // 
+            this.LabelLEDtoSeg2.Enabled = false;
+            this.LabelLEDtoSeg2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg2.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg2.Name = "LabelLEDtoSeg2";
+            this.LabelLEDtoSeg2.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg2.TabIndex = 32;
+            this.LabelLEDtoSeg2.Text = "bis LED";
+            this.LabelLEDtoSeg2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ListBoxModiSeg2
             // 
+            this.ListBoxModiSeg2.Enabled = false;
             this.ListBoxModiSeg2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxModiSeg2.FormattingEnabled = true;
             this.ListBoxModiSeg2.ItemHeight = 16;
@@ -701,6 +737,7 @@
             // TrackBarBrightSeg2
             // 
             this.TrackBarBrightSeg2.BackColor = System.Drawing.Color.White;
+            this.TrackBarBrightSeg2.Enabled = false;
             this.TrackBarBrightSeg2.Location = new System.Drawing.Point(9, 291);
             this.TrackBarBrightSeg2.Maximum = 255;
             this.TrackBarBrightSeg2.Name = "TrackBarBrightSeg2";
@@ -713,6 +750,7 @@
             // TrackBarSpeedSeg2
             // 
             this.TrackBarSpeedSeg2.BackColor = System.Drawing.Color.White;
+            this.TrackBarSpeedSeg2.Enabled = false;
             this.TrackBarSpeedSeg2.Location = new System.Drawing.Point(9, 366);
             this.TrackBarSpeedSeg2.Maximum = 255;
             this.TrackBarSpeedSeg2.Name = "TrackBarSpeedSeg2";
@@ -726,6 +764,7 @@
             // 
             this.PanelSeg2.BackColor = System.Drawing.Color.Black;
             this.PanelSeg2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSeg2.Enabled = false;
             this.PanelSeg2.Location = new System.Drawing.Point(422, 66);
             this.PanelSeg2.Name = "PanelSeg2";
             this.PanelSeg2.Size = new System.Drawing.Size(195, 195);
@@ -734,6 +773,7 @@
             // TrackBarBlueSeg2
             // 
             this.TrackBarBlueSeg2.BackColor = System.Drawing.Color.Blue;
+            this.TrackBarBlueSeg2.Enabled = false;
             this.TrackBarBlueSeg2.Location = new System.Drawing.Point(9, 216);
             this.TrackBarBlueSeg2.Maximum = 255;
             this.TrackBarBlueSeg2.Name = "TrackBarBlueSeg2";
@@ -747,6 +787,7 @@
             // TrackBarGreenSeg2
             // 
             this.TrackBarGreenSeg2.BackColor = System.Drawing.Color.Green;
+            this.TrackBarGreenSeg2.Enabled = false;
             this.TrackBarGreenSeg2.Location = new System.Drawing.Point(9, 141);
             this.TrackBarGreenSeg2.Maximum = 255;
             this.TrackBarGreenSeg2.Name = "TrackBarGreenSeg2";
@@ -760,6 +801,7 @@
             // TrackBarRedSeg2
             // 
             this.TrackBarRedSeg2.BackColor = System.Drawing.Color.Red;
+            this.TrackBarRedSeg2.Enabled = false;
             this.TrackBarRedSeg2.Location = new System.Drawing.Point(9, 66);
             this.TrackBarRedSeg2.Maximum = 255;
             this.TrackBarRedSeg2.Name = "TrackBarRedSeg2";
@@ -772,8 +814,9 @@
             // 
             // NumericUDSeg2
             // 
+            this.NumericUDSeg2.Enabled = false;
             this.NumericUDSeg2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg2.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg2.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg2.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -782,6 +825,7 @@
             this.NumericUDSeg2.Name = "NumericUDSeg2";
             this.NumericUDSeg2.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg2.TabIndex = 22;
+            this.NumericUDSeg2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelValueBlueSeg2
             // 
@@ -851,7 +895,7 @@
             // 
             this.LabelValueRedSeg2.AutoSize = true;
             this.LabelValueRedSeg2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelValueRedSeg2.Location = new System.Drawing.Point(351, 46);
+            this.LabelValueRedSeg2.Location = new System.Drawing.Point(351, 47);
             this.LabelValueRedSeg2.Name = "LabelValueRedSeg2";
             this.LabelValueRedSeg2.Size = new System.Drawing.Size(15, 16);
             this.LabelValueRedSeg2.TabIndex = 14;
@@ -870,16 +914,20 @@
             // 
             // LabelLEDfromSeg2
             // 
-            this.LabelLEDfromSeg2.AutoSize = true;
+            this.LabelLEDfromSeg2.Enabled = false;
             this.LabelLEDfromSeg2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg2.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg2.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg2.Name = "LabelLEDfromSeg2";
-            this.LabelLEDfromSeg2.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg2.Size = new System.Drawing.Size(90, 22);
             this.LabelLEDfromSeg2.TabIndex = 21;
-            this.LabelLEDfromSeg2.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg2.Text = "Von LED";
+            this.LabelLEDfromSeg2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabSeg3
             // 
+            this.TabSeg3.Controls.Add(this.ButtonLEDSegDelSeg3);
+            this.TabSeg3.Controls.Add(this.ButtonLEDSegAddSeg3);
+            this.TabSeg3.Controls.Add(this.LabelLEDtoSeg3);
             this.TabSeg3.Controls.Add(this.ListBoxModiSeg3);
             this.TabSeg3.Controls.Add(this.LabelModiSeg3);
             this.TabSeg3.Controls.Add(this.TrackBarBrightSeg3);
@@ -903,11 +951,47 @@
             this.TabSeg3.Padding = new System.Windows.Forms.Padding(3);
             this.TabSeg3.Size = new System.Drawing.Size(688, 696);
             this.TabSeg3.TabIndex = 2;
-            this.TabSeg3.Text = "Segment 03";
+            this.TabSeg3.Text = "Segment 3";
             this.TabSeg3.UseVisualStyleBackColor = true;
+            // 
+            // ButtonLEDSegDelSeg3
+            // 
+            this.ButtonLEDSegDelSeg3.Enabled = false;
+            this.ButtonLEDSegDelSeg3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegDelSeg3.Location = new System.Drawing.Point(309, 12);
+            this.ButtonLEDSegDelSeg3.Name = "ButtonLEDSegDelSeg3";
+            this.ButtonLEDSegDelSeg3.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegDelSeg3.TabIndex = 47;
+            this.ButtonLEDSegDelSeg3.Text = "Löschen";
+            this.ButtonLEDSegDelSeg3.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegDelSeg3.Click += new System.EventHandler(this.DelSeg3);
+            // 
+            // ButtonLEDSegAddSeg3
+            // 
+            this.ButtonLEDSegAddSeg3.Enabled = false;
+            this.ButtonLEDSegAddSeg3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegAddSeg3.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegAddSeg3.Name = "ButtonLEDSegAddSeg3";
+            this.ButtonLEDSegAddSeg3.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegAddSeg3.TabIndex = 33;
+            this.ButtonLEDSegAddSeg3.Text = "ändern";
+            this.ButtonLEDSegAddSeg3.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegAddSeg3.Click += new System.EventHandler(this.AddSeg4);
+            // 
+            // LabelLEDtoSeg3
+            // 
+            this.LabelLEDtoSeg3.Enabled = false;
+            this.LabelLEDtoSeg3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg3.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg3.Name = "LabelLEDtoSeg3";
+            this.LabelLEDtoSeg3.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg3.TabIndex = 32;
+            this.LabelLEDtoSeg3.Text = "bis LED";
+            this.LabelLEDtoSeg3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ListBoxModiSeg3
             // 
+            this.ListBoxModiSeg3.Enabled = false;
             this.ListBoxModiSeg3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxModiSeg3.FormattingEnabled = true;
             this.ListBoxModiSeg3.ItemHeight = 16;
@@ -929,6 +1013,7 @@
             // TrackBarBrightSeg3
             // 
             this.TrackBarBrightSeg3.BackColor = System.Drawing.Color.White;
+            this.TrackBarBrightSeg3.Enabled = false;
             this.TrackBarBrightSeg3.Location = new System.Drawing.Point(9, 291);
             this.TrackBarBrightSeg3.Maximum = 255;
             this.TrackBarBrightSeg3.Name = "TrackBarBrightSeg3";
@@ -941,6 +1026,7 @@
             // TrackBarSpeedSeg3
             // 
             this.TrackBarSpeedSeg3.BackColor = System.Drawing.Color.White;
+            this.TrackBarSpeedSeg3.Enabled = false;
             this.TrackBarSpeedSeg3.Location = new System.Drawing.Point(9, 366);
             this.TrackBarSpeedSeg3.Maximum = 255;
             this.TrackBarSpeedSeg3.Name = "TrackBarSpeedSeg3";
@@ -954,6 +1040,7 @@
             // 
             this.PanelSeg3.BackColor = System.Drawing.Color.Black;
             this.PanelSeg3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSeg3.Enabled = false;
             this.PanelSeg3.Location = new System.Drawing.Point(422, 66);
             this.PanelSeg3.Name = "PanelSeg3";
             this.PanelSeg3.Size = new System.Drawing.Size(195, 195);
@@ -962,6 +1049,7 @@
             // TrackBarBlueSeg3
             // 
             this.TrackBarBlueSeg3.BackColor = System.Drawing.Color.Blue;
+            this.TrackBarBlueSeg3.Enabled = false;
             this.TrackBarBlueSeg3.Location = new System.Drawing.Point(9, 216);
             this.TrackBarBlueSeg3.Maximum = 255;
             this.TrackBarBlueSeg3.Name = "TrackBarBlueSeg3";
@@ -975,6 +1063,7 @@
             // TrackBarGreenSeg3
             // 
             this.TrackBarGreenSeg3.BackColor = System.Drawing.Color.Green;
+            this.TrackBarGreenSeg3.Enabled = false;
             this.TrackBarGreenSeg3.Location = new System.Drawing.Point(9, 141);
             this.TrackBarGreenSeg3.Maximum = 255;
             this.TrackBarGreenSeg3.Name = "TrackBarGreenSeg3";
@@ -988,6 +1077,7 @@
             // TrackBarRedSeg3
             // 
             this.TrackBarRedSeg3.BackColor = System.Drawing.Color.Red;
+            this.TrackBarRedSeg3.Enabled = false;
             this.TrackBarRedSeg3.Location = new System.Drawing.Point(9, 66);
             this.TrackBarRedSeg3.Maximum = 255;
             this.TrackBarRedSeg3.Name = "TrackBarRedSeg3";
@@ -1000,8 +1090,9 @@
             // 
             // NumericUDSeg3
             // 
+            this.NumericUDSeg3.Enabled = false;
             this.NumericUDSeg3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg3.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg3.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg3.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -1010,6 +1101,7 @@
             this.NumericUDSeg3.Name = "NumericUDSeg3";
             this.NumericUDSeg3.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg3.TabIndex = 22;
+            this.NumericUDSeg3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelValueBlueSeg3
             // 
@@ -1098,16 +1190,20 @@
             // 
             // LabelLEDfromSeg3
             // 
-            this.LabelLEDfromSeg3.AutoSize = true;
+            this.LabelLEDfromSeg3.Enabled = false;
             this.LabelLEDfromSeg3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg3.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg3.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg3.Name = "LabelLEDfromSeg3";
-            this.LabelLEDfromSeg3.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg3.Size = new System.Drawing.Size(90, 22);
             this.LabelLEDfromSeg3.TabIndex = 21;
-            this.LabelLEDfromSeg3.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg3.Text = "Von LED";
+            this.LabelLEDfromSeg3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabSeg4
             // 
+            this.TabSeg4.Controls.Add(this.ButtonLEDSegDelSeg4);
+            this.TabSeg4.Controls.Add(this.ButtonLEDSegAddSeg4);
+            this.TabSeg4.Controls.Add(this.LabelLEDtoSeg4);
             this.TabSeg4.Controls.Add(this.ListBoxModiSeg4);
             this.TabSeg4.Controls.Add(this.LabelModiSeg4);
             this.TabSeg4.Controls.Add(this.TrackBarBrightSeg4);
@@ -1131,11 +1227,47 @@
             this.TabSeg4.Padding = new System.Windows.Forms.Padding(3);
             this.TabSeg4.Size = new System.Drawing.Size(688, 696);
             this.TabSeg4.TabIndex = 3;
-            this.TabSeg4.Text = "Segment 04";
+            this.TabSeg4.Text = "Segment 4";
             this.TabSeg4.UseVisualStyleBackColor = true;
+            // 
+            // ButtonLEDSegDelSeg4
+            // 
+            this.ButtonLEDSegDelSeg4.Enabled = false;
+            this.ButtonLEDSegDelSeg4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegDelSeg4.Location = new System.Drawing.Point(309, 12);
+            this.ButtonLEDSegDelSeg4.Name = "ButtonLEDSegDelSeg4";
+            this.ButtonLEDSegDelSeg4.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegDelSeg4.TabIndex = 47;
+            this.ButtonLEDSegDelSeg4.Text = "Löschen";
+            this.ButtonLEDSegDelSeg4.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegDelSeg4.Click += new System.EventHandler(this.DelSeg4);
+            // 
+            // ButtonLEDSegAddSeg4
+            // 
+            this.ButtonLEDSegAddSeg4.Enabled = false;
+            this.ButtonLEDSegAddSeg4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegAddSeg4.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegAddSeg4.Name = "ButtonLEDSegAddSeg4";
+            this.ButtonLEDSegAddSeg4.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegAddSeg4.TabIndex = 33;
+            this.ButtonLEDSegAddSeg4.Text = "ändern";
+            this.ButtonLEDSegAddSeg4.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegAddSeg4.Click += new System.EventHandler(this.AddSeg5);
+            // 
+            // LabelLEDtoSeg4
+            // 
+            this.LabelLEDtoSeg4.Enabled = false;
+            this.LabelLEDtoSeg4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg4.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg4.Name = "LabelLEDtoSeg4";
+            this.LabelLEDtoSeg4.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg4.TabIndex = 32;
+            this.LabelLEDtoSeg4.Text = "bis LED";
+            this.LabelLEDtoSeg4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ListBoxModiSeg4
             // 
+            this.ListBoxModiSeg4.Enabled = false;
             this.ListBoxModiSeg4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxModiSeg4.FormattingEnabled = true;
             this.ListBoxModiSeg4.ItemHeight = 16;
@@ -1157,6 +1289,7 @@
             // TrackBarBrightSeg4
             // 
             this.TrackBarBrightSeg4.BackColor = System.Drawing.Color.White;
+            this.TrackBarBrightSeg4.Enabled = false;
             this.TrackBarBrightSeg4.Location = new System.Drawing.Point(9, 291);
             this.TrackBarBrightSeg4.Maximum = 255;
             this.TrackBarBrightSeg4.Name = "TrackBarBrightSeg4";
@@ -1169,6 +1302,7 @@
             // TrackBarSpeedSeg4
             // 
             this.TrackBarSpeedSeg4.BackColor = System.Drawing.Color.White;
+            this.TrackBarSpeedSeg4.Enabled = false;
             this.TrackBarSpeedSeg4.Location = new System.Drawing.Point(9, 366);
             this.TrackBarSpeedSeg4.Maximum = 255;
             this.TrackBarSpeedSeg4.Name = "TrackBarSpeedSeg4";
@@ -1182,6 +1316,7 @@
             // 
             this.PanelSeg4.BackColor = System.Drawing.Color.Black;
             this.PanelSeg4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSeg4.Enabled = false;
             this.PanelSeg4.Location = new System.Drawing.Point(422, 66);
             this.PanelSeg4.Name = "PanelSeg4";
             this.PanelSeg4.Size = new System.Drawing.Size(195, 195);
@@ -1190,6 +1325,7 @@
             // TrackBarBlueSeg4
             // 
             this.TrackBarBlueSeg4.BackColor = System.Drawing.Color.Blue;
+            this.TrackBarBlueSeg4.Enabled = false;
             this.TrackBarBlueSeg4.Location = new System.Drawing.Point(9, 216);
             this.TrackBarBlueSeg4.Maximum = 255;
             this.TrackBarBlueSeg4.Name = "TrackBarBlueSeg4";
@@ -1203,6 +1339,7 @@
             // TrackBarGreenSeg4
             // 
             this.TrackBarGreenSeg4.BackColor = System.Drawing.Color.Green;
+            this.TrackBarGreenSeg4.Enabled = false;
             this.TrackBarGreenSeg4.Location = new System.Drawing.Point(9, 141);
             this.TrackBarGreenSeg4.Maximum = 255;
             this.TrackBarGreenSeg4.Name = "TrackBarGreenSeg4";
@@ -1216,6 +1353,7 @@
             // TrackBarRedSeg4
             // 
             this.TrackBarRedSeg4.BackColor = System.Drawing.Color.Red;
+            this.TrackBarRedSeg4.Enabled = false;
             this.TrackBarRedSeg4.Location = new System.Drawing.Point(9, 66);
             this.TrackBarRedSeg4.Maximum = 255;
             this.TrackBarRedSeg4.Name = "TrackBarRedSeg4";
@@ -1228,8 +1366,9 @@
             // 
             // NumericUDSeg4
             // 
+            this.NumericUDSeg4.Enabled = false;
             this.NumericUDSeg4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg4.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg4.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg4.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -1238,6 +1377,7 @@
             this.NumericUDSeg4.Name = "NumericUDSeg4";
             this.NumericUDSeg4.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg4.TabIndex = 22;
+            this.NumericUDSeg4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelValueBlueSeg4
             // 
@@ -1307,7 +1447,7 @@
             // 
             this.LabelValueRedSeg4.AutoSize = true;
             this.LabelValueRedSeg4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelValueRedSeg4.Location = new System.Drawing.Point(351, 46);
+            this.LabelValueRedSeg4.Location = new System.Drawing.Point(351, 47);
             this.LabelValueRedSeg4.Name = "LabelValueRedSeg4";
             this.LabelValueRedSeg4.Size = new System.Drawing.Size(15, 16);
             this.LabelValueRedSeg4.TabIndex = 14;
@@ -1318,7 +1458,7 @@
             // 
             this.LabelColorRedSeg4.AutoSize = true;
             this.LabelColorRedSeg4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelColorRedSeg4.Location = new System.Drawing.Point(6, 46);
+            this.LabelColorRedSeg4.Location = new System.Drawing.Point(6, 47);
             this.LabelColorRedSeg4.Name = "LabelColorRedSeg4";
             this.LabelColorRedSeg4.Size = new System.Drawing.Size(28, 16);
             this.LabelColorRedSeg4.TabIndex = 20;
@@ -1326,16 +1466,20 @@
             // 
             // LabelLEDfromSeg4
             // 
-            this.LabelLEDfromSeg4.AutoSize = true;
+            this.LabelLEDfromSeg4.Enabled = false;
             this.LabelLEDfromSeg4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg4.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg4.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg4.Name = "LabelLEDfromSeg4";
-            this.LabelLEDfromSeg4.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg4.Size = new System.Drawing.Size(90, 22);
             this.LabelLEDfromSeg4.TabIndex = 21;
-            this.LabelLEDfromSeg4.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg4.Text = "Von LED";
+            this.LabelLEDfromSeg4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabSeg5
             // 
+            this.TabSeg5.Controls.Add(this.ButtonLEDSegDelSeg5);
+            this.TabSeg5.Controls.Add(this.ButtonLEDSegAddSeg5);
+            this.TabSeg5.Controls.Add(this.LabelLEDtoSeg5);
             this.TabSeg5.Controls.Add(this.ListBoxModiSeg5);
             this.TabSeg5.Controls.Add(this.LabelModiSeg5);
             this.TabSeg5.Controls.Add(this.TrackBarBrightSeg5);
@@ -1359,11 +1503,47 @@
             this.TabSeg5.Padding = new System.Windows.Forms.Padding(3);
             this.TabSeg5.Size = new System.Drawing.Size(688, 696);
             this.TabSeg5.TabIndex = 4;
-            this.TabSeg5.Text = "Segment 05";
+            this.TabSeg5.Text = "Segment 5";
             this.TabSeg5.UseVisualStyleBackColor = true;
+            // 
+            // ButtonLEDSegDelSeg5
+            // 
+            this.ButtonLEDSegDelSeg5.Enabled = false;
+            this.ButtonLEDSegDelSeg5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegDelSeg5.Location = new System.Drawing.Point(309, 12);
+            this.ButtonLEDSegDelSeg5.Name = "ButtonLEDSegDelSeg5";
+            this.ButtonLEDSegDelSeg5.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegDelSeg5.TabIndex = 47;
+            this.ButtonLEDSegDelSeg5.Text = "Löschen";
+            this.ButtonLEDSegDelSeg5.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegDelSeg5.Click += new System.EventHandler(this.DelSeg5);
+            // 
+            // ButtonLEDSegAddSeg5
+            // 
+            this.ButtonLEDSegAddSeg5.Enabled = false;
+            this.ButtonLEDSegAddSeg5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegAddSeg5.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegAddSeg5.Name = "ButtonLEDSegAddSeg5";
+            this.ButtonLEDSegAddSeg5.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegAddSeg5.TabIndex = 33;
+            this.ButtonLEDSegAddSeg5.Text = "ändern";
+            this.ButtonLEDSegAddSeg5.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegAddSeg5.Click += new System.EventHandler(this.AddSeg6);
+            // 
+            // LabelLEDtoSeg5
+            // 
+            this.LabelLEDtoSeg5.Enabled = false;
+            this.LabelLEDtoSeg5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg5.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg5.Name = "LabelLEDtoSeg5";
+            this.LabelLEDtoSeg5.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg5.TabIndex = 32;
+            this.LabelLEDtoSeg5.Text = "bis LED";
+            this.LabelLEDtoSeg5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ListBoxModiSeg5
             // 
+            this.ListBoxModiSeg5.Enabled = false;
             this.ListBoxModiSeg5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxModiSeg5.FormattingEnabled = true;
             this.ListBoxModiSeg5.ItemHeight = 16;
@@ -1387,6 +1567,7 @@
             // TrackBarBrightSeg5
             // 
             this.TrackBarBrightSeg5.BackColor = System.Drawing.Color.White;
+            this.TrackBarBrightSeg5.Enabled = false;
             this.TrackBarBrightSeg5.Location = new System.Drawing.Point(9, 291);
             this.TrackBarBrightSeg5.Maximum = 255;
             this.TrackBarBrightSeg5.Name = "TrackBarBrightSeg5";
@@ -1399,6 +1580,7 @@
             // TrackBarSpeedSeg5
             // 
             this.TrackBarSpeedSeg5.BackColor = System.Drawing.Color.White;
+            this.TrackBarSpeedSeg5.Enabled = false;
             this.TrackBarSpeedSeg5.Location = new System.Drawing.Point(9, 366);
             this.TrackBarSpeedSeg5.Maximum = 255;
             this.TrackBarSpeedSeg5.Name = "TrackBarSpeedSeg5";
@@ -1412,6 +1594,7 @@
             // 
             this.PanelSeg5.BackColor = System.Drawing.Color.Black;
             this.PanelSeg5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSeg5.Enabled = false;
             this.PanelSeg5.Location = new System.Drawing.Point(422, 66);
             this.PanelSeg5.Name = "PanelSeg5";
             this.PanelSeg5.Size = new System.Drawing.Size(195, 195);
@@ -1420,6 +1603,7 @@
             // TrackBarBlueSeg5
             // 
             this.TrackBarBlueSeg5.BackColor = System.Drawing.Color.Blue;
+            this.TrackBarBlueSeg5.Enabled = false;
             this.TrackBarBlueSeg5.Location = new System.Drawing.Point(9, 216);
             this.TrackBarBlueSeg5.Maximum = 255;
             this.TrackBarBlueSeg5.Name = "TrackBarBlueSeg5";
@@ -1433,6 +1617,7 @@
             // TrackBarGreenSeg5
             // 
             this.TrackBarGreenSeg5.BackColor = System.Drawing.Color.Green;
+            this.TrackBarGreenSeg5.Enabled = false;
             this.TrackBarGreenSeg5.Location = new System.Drawing.Point(9, 141);
             this.TrackBarGreenSeg5.Maximum = 255;
             this.TrackBarGreenSeg5.Name = "TrackBarGreenSeg5";
@@ -1446,6 +1631,7 @@
             // TrackBarRedSeg5
             // 
             this.TrackBarRedSeg5.BackColor = System.Drawing.Color.Red;
+            this.TrackBarRedSeg5.Enabled = false;
             this.TrackBarRedSeg5.Location = new System.Drawing.Point(9, 66);
             this.TrackBarRedSeg5.Maximum = 255;
             this.TrackBarRedSeg5.Name = "TrackBarRedSeg5";
@@ -1458,8 +1644,9 @@
             // 
             // NumericUDSeg5
             // 
+            this.NumericUDSeg5.Enabled = false;
             this.NumericUDSeg5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg5.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg5.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg5.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -1468,6 +1655,7 @@
             this.NumericUDSeg5.Name = "NumericUDSeg5";
             this.NumericUDSeg5.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg5.TabIndex = 22;
+            this.NumericUDSeg5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelValueBlueSeg5
             // 
@@ -1537,7 +1725,7 @@
             // 
             this.LabelValueRedSeg5.AutoSize = true;
             this.LabelValueRedSeg5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelValueRedSeg5.Location = new System.Drawing.Point(351, 46);
+            this.LabelValueRedSeg5.Location = new System.Drawing.Point(351, 47);
             this.LabelValueRedSeg5.Name = "LabelValueRedSeg5";
             this.LabelValueRedSeg5.Size = new System.Drawing.Size(15, 16);
             this.LabelValueRedSeg5.TabIndex = 14;
@@ -1548,7 +1736,7 @@
             // 
             this.LabelColorRedSeg5.AutoSize = true;
             this.LabelColorRedSeg5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelColorRedSeg5.Location = new System.Drawing.Point(6, 46);
+            this.LabelColorRedSeg5.Location = new System.Drawing.Point(6, 47);
             this.LabelColorRedSeg5.Name = "LabelColorRedSeg5";
             this.LabelColorRedSeg5.Size = new System.Drawing.Size(28, 16);
             this.LabelColorRedSeg5.TabIndex = 20;
@@ -1556,16 +1744,20 @@
             // 
             // LabelLEDfromSeg5
             // 
-            this.LabelLEDfromSeg5.AutoSize = true;
+            this.LabelLEDfromSeg5.Enabled = false;
             this.LabelLEDfromSeg5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg5.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg5.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg5.Name = "LabelLEDfromSeg5";
-            this.LabelLEDfromSeg5.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg5.Size = new System.Drawing.Size(90, 22);
             this.LabelLEDfromSeg5.TabIndex = 21;
-            this.LabelLEDfromSeg5.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg5.Text = "Von LED";
+            this.LabelLEDfromSeg5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabSeg6
             // 
+            this.TabSeg6.Controls.Add(this.ButtonLEDSegDelSeg6);
+            this.TabSeg6.Controls.Add(this.ButtonLEDSegAddSeg6);
+            this.TabSeg6.Controls.Add(this.LabelLEDtoSeg6);
             this.TabSeg6.Controls.Add(this.ListBoxModiSeg6);
             this.TabSeg6.Controls.Add(this.LabelModiSeg6);
             this.TabSeg6.Controls.Add(this.TrackBarBrightSeg6);
@@ -1589,11 +1781,47 @@
             this.TabSeg6.Padding = new System.Windows.Forms.Padding(3);
             this.TabSeg6.Size = new System.Drawing.Size(688, 696);
             this.TabSeg6.TabIndex = 5;
-            this.TabSeg6.Text = "Segment 06";
+            this.TabSeg6.Text = "Segment 6";
             this.TabSeg6.UseVisualStyleBackColor = true;
+            // 
+            // ButtonLEDSegDelSeg6
+            // 
+            this.ButtonLEDSegDelSeg6.Enabled = false;
+            this.ButtonLEDSegDelSeg6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegDelSeg6.Location = new System.Drawing.Point(309, 12);
+            this.ButtonLEDSegDelSeg6.Name = "ButtonLEDSegDelSeg6";
+            this.ButtonLEDSegDelSeg6.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegDelSeg6.TabIndex = 47;
+            this.ButtonLEDSegDelSeg6.Text = "Löschen";
+            this.ButtonLEDSegDelSeg6.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegDelSeg6.Click += new System.EventHandler(this.DelSeg6);
+            // 
+            // ButtonLEDSegAddSeg6
+            // 
+            this.ButtonLEDSegAddSeg6.Enabled = false;
+            this.ButtonLEDSegAddSeg6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegAddSeg6.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegAddSeg6.Name = "ButtonLEDSegAddSeg6";
+            this.ButtonLEDSegAddSeg6.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegAddSeg6.TabIndex = 33;
+            this.ButtonLEDSegAddSeg6.Text = "ändern";
+            this.ButtonLEDSegAddSeg6.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegAddSeg6.Click += new System.EventHandler(this.AddSeg7);
+            // 
+            // LabelLEDtoSeg6
+            // 
+            this.LabelLEDtoSeg6.Enabled = false;
+            this.LabelLEDtoSeg6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg6.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg6.Name = "LabelLEDtoSeg6";
+            this.LabelLEDtoSeg6.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg6.TabIndex = 32;
+            this.LabelLEDtoSeg6.Text = "bis LED";
+            this.LabelLEDtoSeg6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ListBoxModiSeg6
             // 
+            this.ListBoxModiSeg6.Enabled = false;
             this.ListBoxModiSeg6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxModiSeg6.FormattingEnabled = true;
             this.ListBoxModiSeg6.ItemHeight = 16;
@@ -1615,6 +1843,7 @@
             // TrackBarBrightSeg6
             // 
             this.TrackBarBrightSeg6.BackColor = System.Drawing.Color.White;
+            this.TrackBarBrightSeg6.Enabled = false;
             this.TrackBarBrightSeg6.Location = new System.Drawing.Point(9, 291);
             this.TrackBarBrightSeg6.Maximum = 255;
             this.TrackBarBrightSeg6.Name = "TrackBarBrightSeg6";
@@ -1627,6 +1856,7 @@
             // TrackBarSpeedSeg6
             // 
             this.TrackBarSpeedSeg6.BackColor = System.Drawing.Color.White;
+            this.TrackBarSpeedSeg6.Enabled = false;
             this.TrackBarSpeedSeg6.Location = new System.Drawing.Point(9, 366);
             this.TrackBarSpeedSeg6.Maximum = 255;
             this.TrackBarSpeedSeg6.Name = "TrackBarSpeedSeg6";
@@ -1640,6 +1870,7 @@
             // 
             this.PanelSeg6.BackColor = System.Drawing.Color.Black;
             this.PanelSeg6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSeg6.Enabled = false;
             this.PanelSeg6.Location = new System.Drawing.Point(422, 66);
             this.PanelSeg6.Name = "PanelSeg6";
             this.PanelSeg6.Size = new System.Drawing.Size(195, 195);
@@ -1648,6 +1879,7 @@
             // TrackBarBlueSeg6
             // 
             this.TrackBarBlueSeg6.BackColor = System.Drawing.Color.Blue;
+            this.TrackBarBlueSeg6.Enabled = false;
             this.TrackBarBlueSeg6.Location = new System.Drawing.Point(9, 216);
             this.TrackBarBlueSeg6.Maximum = 255;
             this.TrackBarBlueSeg6.Name = "TrackBarBlueSeg6";
@@ -1661,6 +1893,7 @@
             // TrackBarGreenSeg6
             // 
             this.TrackBarGreenSeg6.BackColor = System.Drawing.Color.Green;
+            this.TrackBarGreenSeg6.Enabled = false;
             this.TrackBarGreenSeg6.Location = new System.Drawing.Point(9, 141);
             this.TrackBarGreenSeg6.Maximum = 255;
             this.TrackBarGreenSeg6.Name = "TrackBarGreenSeg6";
@@ -1674,6 +1907,7 @@
             // TrackBarRedSeg6
             // 
             this.TrackBarRedSeg6.BackColor = System.Drawing.Color.Red;
+            this.TrackBarRedSeg6.Enabled = false;
             this.TrackBarRedSeg6.Location = new System.Drawing.Point(9, 66);
             this.TrackBarRedSeg6.Maximum = 255;
             this.TrackBarRedSeg6.Name = "TrackBarRedSeg6";
@@ -1686,8 +1920,9 @@
             // 
             // NumericUDSeg6
             // 
+            this.NumericUDSeg6.Enabled = false;
             this.NumericUDSeg6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg6.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg6.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg6.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -1696,6 +1931,7 @@
             this.NumericUDSeg6.Name = "NumericUDSeg6";
             this.NumericUDSeg6.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg6.TabIndex = 22;
+            this.NumericUDSeg6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelValueBlueSeg6
             // 
@@ -1765,7 +2001,7 @@
             // 
             this.LabelValueRedSeg6.AutoSize = true;
             this.LabelValueRedSeg6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelValueRedSeg6.Location = new System.Drawing.Point(351, 46);
+            this.LabelValueRedSeg6.Location = new System.Drawing.Point(351, 47);
             this.LabelValueRedSeg6.Name = "LabelValueRedSeg6";
             this.LabelValueRedSeg6.Size = new System.Drawing.Size(15, 16);
             this.LabelValueRedSeg6.TabIndex = 14;
@@ -1776,7 +2012,7 @@
             // 
             this.LabelColorRedSeg6.AutoSize = true;
             this.LabelColorRedSeg6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelColorRedSeg6.Location = new System.Drawing.Point(6, 46);
+            this.LabelColorRedSeg6.Location = new System.Drawing.Point(6, 47);
             this.LabelColorRedSeg6.Name = "LabelColorRedSeg6";
             this.LabelColorRedSeg6.Size = new System.Drawing.Size(28, 16);
             this.LabelColorRedSeg6.TabIndex = 20;
@@ -1784,16 +2020,20 @@
             // 
             // LabelLEDfromSeg6
             // 
-            this.LabelLEDfromSeg6.AutoSize = true;
+            this.LabelLEDfromSeg6.Enabled = false;
             this.LabelLEDfromSeg6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg6.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg6.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg6.Name = "LabelLEDfromSeg6";
-            this.LabelLEDfromSeg6.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg6.Size = new System.Drawing.Size(90, 22);
             this.LabelLEDfromSeg6.TabIndex = 21;
-            this.LabelLEDfromSeg6.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg6.Text = "Von LED";
+            this.LabelLEDfromSeg6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabSeg7
             // 
+            this.TabSeg7.Controls.Add(this.ButtonLEDSegDelSeg7);
+            this.TabSeg7.Controls.Add(this.ButtonLEDSegAddSeg7);
+            this.TabSeg7.Controls.Add(this.LabelLEDtoSeg7);
             this.TabSeg7.Controls.Add(this.ListBoxModiSeg7);
             this.TabSeg7.Controls.Add(this.LabelModiSeg7);
             this.TabSeg7.Controls.Add(this.TrackBarBrightSeg7);
@@ -1817,11 +2057,47 @@
             this.TabSeg7.Padding = new System.Windows.Forms.Padding(3);
             this.TabSeg7.Size = new System.Drawing.Size(688, 696);
             this.TabSeg7.TabIndex = 6;
-            this.TabSeg7.Text = "Segment 07";
+            this.TabSeg7.Text = "Segment 7";
             this.TabSeg7.UseVisualStyleBackColor = true;
+            // 
+            // ButtonLEDSegDelSeg7
+            // 
+            this.ButtonLEDSegDelSeg7.Enabled = false;
+            this.ButtonLEDSegDelSeg7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegDelSeg7.Location = new System.Drawing.Point(309, 12);
+            this.ButtonLEDSegDelSeg7.Name = "ButtonLEDSegDelSeg7";
+            this.ButtonLEDSegDelSeg7.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegDelSeg7.TabIndex = 47;
+            this.ButtonLEDSegDelSeg7.Text = "Löschen";
+            this.ButtonLEDSegDelSeg7.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegDelSeg7.Click += new System.EventHandler(this.DelSeg7);
+            // 
+            // ButtonLEDSegAddSeg7
+            // 
+            this.ButtonLEDSegAddSeg7.Enabled = false;
+            this.ButtonLEDSegAddSeg7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegAddSeg7.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegAddSeg7.Name = "ButtonLEDSegAddSeg7";
+            this.ButtonLEDSegAddSeg7.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegAddSeg7.TabIndex = 41;
+            this.ButtonLEDSegAddSeg7.Text = "ändern";
+            this.ButtonLEDSegAddSeg7.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegAddSeg7.Click += new System.EventHandler(this.AddSeg8);
+            // 
+            // LabelLEDtoSeg7
+            // 
+            this.LabelLEDtoSeg7.Enabled = false;
+            this.LabelLEDtoSeg7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg7.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg7.Name = "LabelLEDtoSeg7";
+            this.LabelLEDtoSeg7.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg7.TabIndex = 40;
+            this.LabelLEDtoSeg7.Text = "bis LED";
+            this.LabelLEDtoSeg7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ListBoxModiSeg7
             // 
+            this.ListBoxModiSeg7.Enabled = false;
             this.ListBoxModiSeg7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxModiSeg7.FormattingEnabled = true;
             this.ListBoxModiSeg7.ItemHeight = 16;
@@ -1843,6 +2119,7 @@
             // TrackBarBrightSeg7
             // 
             this.TrackBarBrightSeg7.BackColor = System.Drawing.Color.White;
+            this.TrackBarBrightSeg7.Enabled = false;
             this.TrackBarBrightSeg7.Location = new System.Drawing.Point(9, 291);
             this.TrackBarBrightSeg7.Maximum = 255;
             this.TrackBarBrightSeg7.Name = "TrackBarBrightSeg7";
@@ -1855,6 +2132,7 @@
             // TrackBarSpeedSeg7
             // 
             this.TrackBarSpeedSeg7.BackColor = System.Drawing.Color.White;
+            this.TrackBarSpeedSeg7.Enabled = false;
             this.TrackBarSpeedSeg7.Location = new System.Drawing.Point(9, 366);
             this.TrackBarSpeedSeg7.Maximum = 255;
             this.TrackBarSpeedSeg7.Name = "TrackBarSpeedSeg7";
@@ -1888,6 +2166,7 @@
             // 
             this.PanelSeg7.BackColor = System.Drawing.Color.Black;
             this.PanelSeg7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSeg7.Enabled = false;
             this.PanelSeg7.Location = new System.Drawing.Point(422, 66);
             this.PanelSeg7.Name = "PanelSeg7";
             this.PanelSeg7.Size = new System.Drawing.Size(195, 195);
@@ -1896,6 +2175,7 @@
             // TrackBarBlueSeg7
             // 
             this.TrackBarBlueSeg7.BackColor = System.Drawing.Color.Blue;
+            this.TrackBarBlueSeg7.Enabled = false;
             this.TrackBarBlueSeg7.Location = new System.Drawing.Point(9, 216);
             this.TrackBarBlueSeg7.Maximum = 255;
             this.TrackBarBlueSeg7.Name = "TrackBarBlueSeg7";
@@ -1909,6 +2189,7 @@
             // TrackBarGreenSeg7
             // 
             this.TrackBarGreenSeg7.BackColor = System.Drawing.Color.Green;
+            this.TrackBarGreenSeg7.Enabled = false;
             this.TrackBarGreenSeg7.Location = new System.Drawing.Point(9, 141);
             this.TrackBarGreenSeg7.Maximum = 255;
             this.TrackBarGreenSeg7.Name = "TrackBarGreenSeg7";
@@ -1966,6 +2247,7 @@
             // TrackBarRedSeg7
             // 
             this.TrackBarRedSeg7.BackColor = System.Drawing.Color.Red;
+            this.TrackBarRedSeg7.Enabled = false;
             this.TrackBarRedSeg7.Location = new System.Drawing.Point(9, 66);
             this.TrackBarRedSeg7.Maximum = 255;
             this.TrackBarRedSeg7.Name = "TrackBarRedSeg7";
@@ -1980,7 +2262,7 @@
             // 
             this.LabelValueRedSeg7.AutoSize = true;
             this.LabelValueRedSeg7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelValueRedSeg7.Location = new System.Drawing.Point(351, 46);
+            this.LabelValueRedSeg7.Location = new System.Drawing.Point(351, 47);
             this.LabelValueRedSeg7.Name = "LabelValueRedSeg7";
             this.LabelValueRedSeg7.Size = new System.Drawing.Size(15, 16);
             this.LabelValueRedSeg7.TabIndex = 24;
@@ -1991,7 +2273,7 @@
             // 
             this.LabelColorRedSeg7.AutoSize = true;
             this.LabelColorRedSeg7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelColorRedSeg7.Location = new System.Drawing.Point(6, 46);
+            this.LabelColorRedSeg7.Location = new System.Drawing.Point(6, 47);
             this.LabelColorRedSeg7.Name = "LabelColorRedSeg7";
             this.LabelColorRedSeg7.Size = new System.Drawing.Size(28, 16);
             this.LabelColorRedSeg7.TabIndex = 25;
@@ -1999,8 +2281,9 @@
             // 
             // NumericUDSeg7
             // 
+            this.NumericUDSeg7.Enabled = false;
             this.NumericUDSeg7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg7.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg7.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg7.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -2009,19 +2292,24 @@
             this.NumericUDSeg7.Name = "NumericUDSeg7";
             this.NumericUDSeg7.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg7.TabIndex = 23;
+            this.NumericUDSeg7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelLEDfromSeg7
             // 
-            this.LabelLEDfromSeg7.AutoSize = true;
+            this.LabelLEDfromSeg7.Enabled = false;
             this.LabelLEDfromSeg7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg7.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg7.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg7.Name = "LabelLEDfromSeg7";
-            this.LabelLEDfromSeg7.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg7.Size = new System.Drawing.Size(90, 22);
             this.LabelLEDfromSeg7.TabIndex = 22;
-            this.LabelLEDfromSeg7.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg7.Text = "Von LED";
+            this.LabelLEDfromSeg7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabSeg8
             // 
+            this.TabSeg8.Controls.Add(this.ButtonLEDSegDelSeg8);
+            this.TabSeg8.Controls.Add(this.ButtonLEDSegAddSeg8);
+            this.TabSeg8.Controls.Add(this.LabelLEDtoSeg8);
             this.TabSeg8.Controls.Add(this.ListBoxModiSeg8);
             this.TabSeg8.Controls.Add(this.LabelModiSeg8);
             this.TabSeg8.Controls.Add(this.TrackBarBrightSeg8);
@@ -2045,11 +2333,47 @@
             this.TabSeg8.Padding = new System.Windows.Forms.Padding(3);
             this.TabSeg8.Size = new System.Drawing.Size(688, 696);
             this.TabSeg8.TabIndex = 7;
-            this.TabSeg8.Text = "Segment 08";
+            this.TabSeg8.Text = "Segment 8";
             this.TabSeg8.UseVisualStyleBackColor = true;
+            // 
+            // ButtonLEDSegDelSeg8
+            // 
+            this.ButtonLEDSegDelSeg8.Enabled = false;
+            this.ButtonLEDSegDelSeg8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegDelSeg8.Location = new System.Drawing.Point(309, 12);
+            this.ButtonLEDSegDelSeg8.Name = "ButtonLEDSegDelSeg8";
+            this.ButtonLEDSegDelSeg8.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegDelSeg8.TabIndex = 47;
+            this.ButtonLEDSegDelSeg8.Text = "Löschen";
+            this.ButtonLEDSegDelSeg8.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegDelSeg8.Click += new System.EventHandler(this.DelSeg8);
+            // 
+            // ButtonLEDSegAddSeg8
+            // 
+            this.ButtonLEDSegAddSeg8.Enabled = false;
+            this.ButtonLEDSegAddSeg8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegAddSeg8.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegAddSeg8.Name = "ButtonLEDSegAddSeg8";
+            this.ButtonLEDSegAddSeg8.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegAddSeg8.TabIndex = 41;
+            this.ButtonLEDSegAddSeg8.Text = "ändern";
+            this.ButtonLEDSegAddSeg8.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegAddSeg8.Click += new System.EventHandler(this.AddSeg9);
+            // 
+            // LabelLEDtoSeg8
+            // 
+            this.LabelLEDtoSeg8.Enabled = false;
+            this.LabelLEDtoSeg8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg8.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg8.Name = "LabelLEDtoSeg8";
+            this.LabelLEDtoSeg8.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg8.TabIndex = 40;
+            this.LabelLEDtoSeg8.Text = "bis LED";
+            this.LabelLEDtoSeg8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ListBoxModiSeg8
             // 
+            this.ListBoxModiSeg8.Enabled = false;
             this.ListBoxModiSeg8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxModiSeg8.FormattingEnabled = true;
             this.ListBoxModiSeg8.ItemHeight = 16;
@@ -2071,6 +2395,7 @@
             // TrackBarBrightSeg8
             // 
             this.TrackBarBrightSeg8.BackColor = System.Drawing.Color.White;
+            this.TrackBarBrightSeg8.Enabled = false;
             this.TrackBarBrightSeg8.Location = new System.Drawing.Point(9, 291);
             this.TrackBarBrightSeg8.Maximum = 255;
             this.TrackBarBrightSeg8.Name = "TrackBarBrightSeg8";
@@ -2083,6 +2408,7 @@
             // TrackBarSpeedSeg8
             // 
             this.TrackBarSpeedSeg8.BackColor = System.Drawing.Color.White;
+            this.TrackBarSpeedSeg8.Enabled = false;
             this.TrackBarSpeedSeg8.Location = new System.Drawing.Point(9, 366);
             this.TrackBarSpeedSeg8.Maximum = 255;
             this.TrackBarSpeedSeg8.Name = "TrackBarSpeedSeg8";
@@ -2116,6 +2442,7 @@
             // 
             this.PanelSeg8.BackColor = System.Drawing.Color.Black;
             this.PanelSeg8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSeg8.Enabled = false;
             this.PanelSeg8.Location = new System.Drawing.Point(422, 66);
             this.PanelSeg8.Name = "PanelSeg8";
             this.PanelSeg8.Size = new System.Drawing.Size(195, 195);
@@ -2124,6 +2451,7 @@
             // TrackBarBlueSeg8
             // 
             this.TrackBarBlueSeg8.BackColor = System.Drawing.Color.Blue;
+            this.TrackBarBlueSeg8.Enabled = false;
             this.TrackBarBlueSeg8.Location = new System.Drawing.Point(9, 216);
             this.TrackBarBlueSeg8.Maximum = 255;
             this.TrackBarBlueSeg8.Name = "TrackBarBlueSeg8";
@@ -2137,6 +2465,7 @@
             // TrackBarGreenSeg8
             // 
             this.TrackBarGreenSeg8.BackColor = System.Drawing.Color.Green;
+            this.TrackBarGreenSeg8.Enabled = false;
             this.TrackBarGreenSeg8.Location = new System.Drawing.Point(9, 141);
             this.TrackBarGreenSeg8.Maximum = 255;
             this.TrackBarGreenSeg8.Name = "TrackBarGreenSeg8";
@@ -2194,6 +2523,7 @@
             // TrackBarRedSeg8
             // 
             this.TrackBarRedSeg8.BackColor = System.Drawing.Color.Red;
+            this.TrackBarRedSeg8.Enabled = false;
             this.TrackBarRedSeg8.Location = new System.Drawing.Point(9, 66);
             this.TrackBarRedSeg8.Maximum = 255;
             this.TrackBarRedSeg8.Name = "TrackBarRedSeg8";
@@ -2208,7 +2538,7 @@
             // 
             this.LabelValueRedSeg8.AutoSize = true;
             this.LabelValueRedSeg8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelValueRedSeg8.Location = new System.Drawing.Point(351, 46);
+            this.LabelValueRedSeg8.Location = new System.Drawing.Point(351, 47);
             this.LabelValueRedSeg8.Name = "LabelValueRedSeg8";
             this.LabelValueRedSeg8.Size = new System.Drawing.Size(15, 16);
             this.LabelValueRedSeg8.TabIndex = 24;
@@ -2219,7 +2549,7 @@
             // 
             this.LabelColorRedSeg8.AutoSize = true;
             this.LabelColorRedSeg8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelColorRedSeg8.Location = new System.Drawing.Point(6, 46);
+            this.LabelColorRedSeg8.Location = new System.Drawing.Point(6, 47);
             this.LabelColorRedSeg8.Name = "LabelColorRedSeg8";
             this.LabelColorRedSeg8.Size = new System.Drawing.Size(28, 16);
             this.LabelColorRedSeg8.TabIndex = 25;
@@ -2227,8 +2557,9 @@
             // 
             // NumericUDSeg8
             // 
+            this.NumericUDSeg8.Enabled = false;
             this.NumericUDSeg8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg8.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg8.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg8.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -2237,19 +2568,24 @@
             this.NumericUDSeg8.Name = "NumericUDSeg8";
             this.NumericUDSeg8.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg8.TabIndex = 23;
+            this.NumericUDSeg8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelLEDfromSeg8
             // 
-            this.LabelLEDfromSeg8.AutoSize = true;
+            this.LabelLEDfromSeg8.Enabled = false;
             this.LabelLEDfromSeg8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg8.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg8.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg8.Name = "LabelLEDfromSeg8";
-            this.LabelLEDfromSeg8.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg8.Size = new System.Drawing.Size(90, 22);
             this.LabelLEDfromSeg8.TabIndex = 22;
-            this.LabelLEDfromSeg8.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg8.Text = "Von LED";
+            this.LabelLEDfromSeg8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabSeg9
             // 
+            this.TabSeg9.Controls.Add(this.ButtonLEDSegDelSeg9);
+            this.TabSeg9.Controls.Add(this.ButtonLEDSegAddSeg9);
+            this.TabSeg9.Controls.Add(this.LabelLEDtoSeg9);
             this.TabSeg9.Controls.Add(this.ListBoxModiSeg9);
             this.TabSeg9.Controls.Add(this.LabelModiSeg9);
             this.TabSeg9.Controls.Add(this.TrackBarBrightSeg9);
@@ -2273,11 +2609,47 @@
             this.TabSeg9.Padding = new System.Windows.Forms.Padding(3);
             this.TabSeg9.Size = new System.Drawing.Size(688, 696);
             this.TabSeg9.TabIndex = 8;
-            this.TabSeg9.Text = "Segment 09";
+            this.TabSeg9.Text = "Segment 9";
             this.TabSeg9.UseVisualStyleBackColor = true;
+            // 
+            // ButtonLEDSegDelSeg9
+            // 
+            this.ButtonLEDSegDelSeg9.Enabled = false;
+            this.ButtonLEDSegDelSeg9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegDelSeg9.Location = new System.Drawing.Point(309, 12);
+            this.ButtonLEDSegDelSeg9.Name = "ButtonLEDSegDelSeg9";
+            this.ButtonLEDSegDelSeg9.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegDelSeg9.TabIndex = 47;
+            this.ButtonLEDSegDelSeg9.Text = "Löschen";
+            this.ButtonLEDSegDelSeg9.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegDelSeg9.Click += new System.EventHandler(this.DelSeg9);
+            // 
+            // ButtonLEDSegAddSeg9
+            // 
+            this.ButtonLEDSegAddSeg9.Enabled = false;
+            this.ButtonLEDSegAddSeg9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegAddSeg9.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegAddSeg9.Name = "ButtonLEDSegAddSeg9";
+            this.ButtonLEDSegAddSeg9.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegAddSeg9.TabIndex = 41;
+            this.ButtonLEDSegAddSeg9.Text = "ändern";
+            this.ButtonLEDSegAddSeg9.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegAddSeg9.Click += new System.EventHandler(this.AddSeg10);
+            // 
+            // LabelLEDtoSeg9
+            // 
+            this.LabelLEDtoSeg9.Enabled = false;
+            this.LabelLEDtoSeg9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg9.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg9.Name = "LabelLEDtoSeg9";
+            this.LabelLEDtoSeg9.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg9.TabIndex = 40;
+            this.LabelLEDtoSeg9.Text = "bis LED";
+            this.LabelLEDtoSeg9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ListBoxModiSeg9
             // 
+            this.ListBoxModiSeg9.Enabled = false;
             this.ListBoxModiSeg9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxModiSeg9.FormattingEnabled = true;
             this.ListBoxModiSeg9.ItemHeight = 16;
@@ -2299,6 +2671,7 @@
             // TrackBarBrightSeg9
             // 
             this.TrackBarBrightSeg9.BackColor = System.Drawing.Color.White;
+            this.TrackBarBrightSeg9.Enabled = false;
             this.TrackBarBrightSeg9.Location = new System.Drawing.Point(9, 291);
             this.TrackBarBrightSeg9.Maximum = 255;
             this.TrackBarBrightSeg9.Name = "TrackBarBrightSeg9";
@@ -2311,6 +2684,7 @@
             // TrackBarSpeedSeg9
             // 
             this.TrackBarSpeedSeg9.BackColor = System.Drawing.Color.White;
+            this.TrackBarSpeedSeg9.Enabled = false;
             this.TrackBarSpeedSeg9.Location = new System.Drawing.Point(9, 366);
             this.TrackBarSpeedSeg9.Maximum = 255;
             this.TrackBarSpeedSeg9.Name = "TrackBarSpeedSeg9";
@@ -2344,6 +2718,7 @@
             // 
             this.PanelSeg9.BackColor = System.Drawing.Color.Black;
             this.PanelSeg9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSeg9.Enabled = false;
             this.PanelSeg9.Location = new System.Drawing.Point(422, 66);
             this.PanelSeg9.Name = "PanelSeg9";
             this.PanelSeg9.Size = new System.Drawing.Size(195, 195);
@@ -2352,6 +2727,7 @@
             // TrackBarBlueSeg9
             // 
             this.TrackBarBlueSeg9.BackColor = System.Drawing.Color.Blue;
+            this.TrackBarBlueSeg9.Enabled = false;
             this.TrackBarBlueSeg9.Location = new System.Drawing.Point(9, 216);
             this.TrackBarBlueSeg9.Maximum = 255;
             this.TrackBarBlueSeg9.Name = "TrackBarBlueSeg9";
@@ -2365,6 +2741,7 @@
             // TrackBarGreenSeg9
             // 
             this.TrackBarGreenSeg9.BackColor = System.Drawing.Color.Green;
+            this.TrackBarGreenSeg9.Enabled = false;
             this.TrackBarGreenSeg9.Location = new System.Drawing.Point(9, 141);
             this.TrackBarGreenSeg9.Maximum = 255;
             this.TrackBarGreenSeg9.Name = "TrackBarGreenSeg9";
@@ -2422,6 +2799,7 @@
             // TrackBarRedSeg9
             // 
             this.TrackBarRedSeg9.BackColor = System.Drawing.Color.Red;
+            this.TrackBarRedSeg9.Enabled = false;
             this.TrackBarRedSeg9.Location = new System.Drawing.Point(9, 66);
             this.TrackBarRedSeg9.Maximum = 255;
             this.TrackBarRedSeg9.Name = "TrackBarRedSeg9";
@@ -2436,7 +2814,7 @@
             // 
             this.LabelValueRedSeg9.AutoSize = true;
             this.LabelValueRedSeg9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelValueRedSeg9.Location = new System.Drawing.Point(351, 46);
+            this.LabelValueRedSeg9.Location = new System.Drawing.Point(351, 47);
             this.LabelValueRedSeg9.Name = "LabelValueRedSeg9";
             this.LabelValueRedSeg9.Size = new System.Drawing.Size(15, 16);
             this.LabelValueRedSeg9.TabIndex = 24;
@@ -2447,7 +2825,7 @@
             // 
             this.LabelColorRedSeg9.AutoSize = true;
             this.LabelColorRedSeg9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelColorRedSeg9.Location = new System.Drawing.Point(6, 46);
+            this.LabelColorRedSeg9.Location = new System.Drawing.Point(6, 47);
             this.LabelColorRedSeg9.Name = "LabelColorRedSeg9";
             this.LabelColorRedSeg9.Size = new System.Drawing.Size(28, 16);
             this.LabelColorRedSeg9.TabIndex = 25;
@@ -2455,8 +2833,10 @@
             // 
             // NumericUDSeg9
             // 
+            this.NumericUDSeg9.Enabled = false;
             this.NumericUDSeg9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg9.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg9.InterceptArrowKeys = false;
+            this.NumericUDSeg9.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg9.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -2465,19 +2845,23 @@
             this.NumericUDSeg9.Name = "NumericUDSeg9";
             this.NumericUDSeg9.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg9.TabIndex = 23;
+            this.NumericUDSeg9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelLEDfromSeg9
             // 
-            this.LabelLEDfromSeg9.AutoSize = true;
+            this.LabelLEDfromSeg9.Enabled = false;
             this.LabelLEDfromSeg9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg9.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg9.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg9.Name = "LabelLEDfromSeg9";
-            this.LabelLEDfromSeg9.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg9.Size = new System.Drawing.Size(90, 22);
             this.LabelLEDfromSeg9.TabIndex = 22;
-            this.LabelLEDfromSeg9.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg9.Text = "Von LED";
+            this.LabelLEDfromSeg9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabSeg10
             // 
+            this.TabSeg10.Controls.Add(this.ButtonLEDSegDelSeg10);
+            this.TabSeg10.Controls.Add(this.LabelLEDtoSeg10);
             this.TabSeg10.Controls.Add(this.ListBoxModiSeg10);
             this.TabSeg10.Controls.Add(this.LabelModiSeg10);
             this.TabSeg10.Controls.Add(this.TrackBarBrightSeg10);
@@ -2504,8 +2888,32 @@
             this.TabSeg10.Text = "Segment 10";
             this.TabSeg10.UseVisualStyleBackColor = true;
             // 
+            // ButtonLEDSegDelSeg10
+            // 
+            this.ButtonLEDSegDelSeg10.Enabled = false;
+            this.ButtonLEDSegDelSeg10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLEDSegDelSeg10.Location = new System.Drawing.Point(219, 12);
+            this.ButtonLEDSegDelSeg10.Name = "ButtonLEDSegDelSeg10";
+            this.ButtonLEDSegDelSeg10.Size = new System.Drawing.Size(70, 22);
+            this.ButtonLEDSegDelSeg10.TabIndex = 46;
+            this.ButtonLEDSegDelSeg10.Text = "Löschen";
+            this.ButtonLEDSegDelSeg10.UseVisualStyleBackColor = true;
+            this.ButtonLEDSegDelSeg10.Click += new System.EventHandler(this.DelSeg10);
+            // 
+            // LabelLEDtoSeg10
+            // 
+            this.LabelLEDtoSeg10.Enabled = false;
+            this.LabelLEDtoSeg10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLEDtoSeg10.Location = new System.Drawing.Point(83, 12);
+            this.LabelLEDtoSeg10.Name = "LabelLEDtoSeg10";
+            this.LabelLEDtoSeg10.Size = new System.Drawing.Size(60, 22);
+            this.LabelLEDtoSeg10.TabIndex = 45;
+            this.LabelLEDtoSeg10.Text = "bis LED";
+            this.LabelLEDtoSeg10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // ListBoxModiSeg10
             // 
+            this.ListBoxModiSeg10.Enabled = false;
             this.ListBoxModiSeg10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxModiSeg10.FormattingEnabled = true;
             this.ListBoxModiSeg10.ItemHeight = 16;
@@ -2527,6 +2935,7 @@
             // TrackBarBrightSeg10
             // 
             this.TrackBarBrightSeg10.BackColor = System.Drawing.Color.White;
+            this.TrackBarBrightSeg10.Enabled = false;
             this.TrackBarBrightSeg10.Location = new System.Drawing.Point(9, 291);
             this.TrackBarBrightSeg10.Maximum = 255;
             this.TrackBarBrightSeg10.Name = "TrackBarBrightSeg10";
@@ -2539,6 +2948,7 @@
             // TrackBarSpeedSeg10
             // 
             this.TrackBarSpeedSeg10.BackColor = System.Drawing.Color.White;
+            this.TrackBarSpeedSeg10.Enabled = false;
             this.TrackBarSpeedSeg10.Location = new System.Drawing.Point(9, 366);
             this.TrackBarSpeedSeg10.Maximum = 255;
             this.TrackBarSpeedSeg10.Name = "TrackBarSpeedSeg10";
@@ -2572,6 +2982,7 @@
             // 
             this.PanelSeg10.BackColor = System.Drawing.Color.Black;
             this.PanelSeg10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSeg10.Enabled = false;
             this.PanelSeg10.Location = new System.Drawing.Point(422, 66);
             this.PanelSeg10.Name = "PanelSeg10";
             this.PanelSeg10.Size = new System.Drawing.Size(195, 195);
@@ -2580,6 +2991,7 @@
             // TrackBarBlueSeg10
             // 
             this.TrackBarBlueSeg10.BackColor = System.Drawing.Color.Blue;
+            this.TrackBarBlueSeg10.Enabled = false;
             this.TrackBarBlueSeg10.Location = new System.Drawing.Point(9, 216);
             this.TrackBarBlueSeg10.Maximum = 255;
             this.TrackBarBlueSeg10.Name = "TrackBarBlueSeg10";
@@ -2616,6 +3028,7 @@
             // TrackBarGreenSeg10
             // 
             this.TrackBarGreenSeg10.BackColor = System.Drawing.Color.Green;
+            this.TrackBarGreenSeg10.Enabled = false;
             this.TrackBarGreenSeg10.Location = new System.Drawing.Point(9, 141);
             this.TrackBarGreenSeg10.Maximum = 255;
             this.TrackBarGreenSeg10.Name = "TrackBarGreenSeg10";
@@ -2650,6 +3063,7 @@
             // TrackBarRedSeg10
             // 
             this.TrackBarRedSeg10.BackColor = System.Drawing.Color.Red;
+            this.TrackBarRedSeg10.Enabled = false;
             this.TrackBarRedSeg10.Location = new System.Drawing.Point(9, 66);
             this.TrackBarRedSeg10.Maximum = 255;
             this.TrackBarRedSeg10.Name = "TrackBarRedSeg10";
@@ -2664,7 +3078,7 @@
             // 
             this.LabelValueRedSeg10.AutoSize = true;
             this.LabelValueRedSeg10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelValueRedSeg10.Location = new System.Drawing.Point(351, 46);
+            this.LabelValueRedSeg10.Location = new System.Drawing.Point(351, 47);
             this.LabelValueRedSeg10.Name = "LabelValueRedSeg10";
             this.LabelValueRedSeg10.Size = new System.Drawing.Size(15, 16);
             this.LabelValueRedSeg10.TabIndex = 24;
@@ -2675,7 +3089,7 @@
             // 
             this.LabelColorRedSeg10.AutoSize = true;
             this.LabelColorRedSeg10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelColorRedSeg10.Location = new System.Drawing.Point(6, 46);
+            this.LabelColorRedSeg10.Location = new System.Drawing.Point(6, 47);
             this.LabelColorRedSeg10.Name = "LabelColorRedSeg10";
             this.LabelColorRedSeg10.Size = new System.Drawing.Size(28, 16);
             this.LabelColorRedSeg10.TabIndex = 25;
@@ -2683,8 +3097,9 @@
             // 
             // NumericUDSeg10
             // 
+            this.NumericUDSeg10.Enabled = false;
             this.NumericUDSeg10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUDSeg10.Location = new System.Drawing.Point(132, 12);
+            this.NumericUDSeg10.Location = new System.Drawing.Point(150, 12);
             this.NumericUDSeg10.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -2693,16 +3108,18 @@
             this.NumericUDSeg10.Name = "NumericUDSeg10";
             this.NumericUDSeg10.Size = new System.Drawing.Size(49, 22);
             this.NumericUDSeg10.TabIndex = 23;
+            this.NumericUDSeg10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LabelLEDfromSeg10
             // 
-            this.LabelLEDfromSeg10.AutoSize = true;
+            this.LabelLEDfromSeg10.Enabled = false;
             this.LabelLEDfromSeg10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLEDfromSeg10.Location = new System.Drawing.Point(6, 14);
+            this.LabelLEDfromSeg10.Location = new System.Drawing.Point(6, 12);
             this.LabelLEDfromSeg10.Name = "LabelLEDfromSeg10";
-            this.LabelLEDfromSeg10.Size = new System.Drawing.Size(120, 16);
+            this.LabelLEDfromSeg10.Size = new System.Drawing.Size(90, 22);
             this.LabelLEDfromSeg10.TabIndex = 22;
-            this.LabelLEDfromSeg10.Text = "Von LED 1 bis LED";
+            this.LabelLEDfromSeg10.Text = "Von LED";
+            this.LabelLEDfromSeg10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TabKonfig
             // 
@@ -2794,6 +3211,45 @@
             this.LabelConfLEDCount.TabIndex = 0;
             this.LabelConfLEDCount.Text = "Anzahl der LED\'S";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(730, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.öffnenToolStripMenuItem,
+            this.speichernToolStripMenuItem,
+            this.speichernToolStripMenuItem1});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(46, 20);
+            this.toolStripMenuItem1.Text = "Datei";
+            // 
+            // öffnenToolStripMenuItem
+            // 
+            this.öffnenToolStripMenuItem.Name = "öffnenToolStripMenuItem";
+            this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.öffnenToolStripMenuItem.Text = "Öffnen";
+            this.öffnenToolStripMenuItem.Click += new System.EventHandler(this.öffnenToolStripMenuItem_Click);
+            // 
+            // speichernToolStripMenuItem
+            // 
+            this.speichernToolStripMenuItem.Name = "speichernToolStripMenuItem";
+            this.speichernToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.speichernToolStripMenuItem.Text = "Speichern";
+            // 
+            // speichernToolStripMenuItem1
+            // 
+            this.speichernToolStripMenuItem1.Name = "speichernToolStripMenuItem1";
+            this.speichernToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
+            this.speichernToolStripMenuItem1.Text = "Speichern";
+            // 
             // FormWS812
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2802,15 +3258,10 @@
             this.Controls.Add(this.TabHaupt);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormWS812";
             this.Text = "Ben\'s LED Kontrolle";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.TabHaupt.ResumeLayout(false);
             this.TabControl.ResumeLayout(false);
-            this.TabControl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackBarSegCount)).EndInit();
             this.TabSegmente.ResumeLayout(false);
             this.TabSeg1.ResumeLayout(false);
             this.TabSeg1.PerformLayout();
@@ -2894,23 +3345,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericUDSeg10)).EndInit();
             this.TabKonfig.ResumeLayout(false);
             this.TabKonfig.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem dateiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem öffnenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem speichernToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem speichernAlsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem beendenToolStripMenuItem;
         private System.Windows.Forms.TabControl TabHaupt;
         private System.Windows.Forms.TabPage TabControl;
-        private System.Windows.Forms.Label LabelSegCount;
-        private System.Windows.Forms.TrackBar TrackBarSegCount;
         private System.Windows.Forms.TabControl TabSegmente;
         private System.Windows.Forms.TabPage TabSeg1;
         private System.Windows.Forms.TabPage TabSeg2;
@@ -3110,6 +3554,39 @@
         private System.Windows.Forms.ListBox ListBoxModiSeg10;
         private System.Windows.Forms.Label LabelModiSeg10;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label LabelLEDtoSeg1;
+        private System.Windows.Forms.Button ButtonLEDSegAddSeg1;
+        private System.Windows.Forms.Button ButtonLEDSegAddSeg2;
+        private System.Windows.Forms.Label LabelLEDtoSeg2;
+        private System.Windows.Forms.Button ButtonLEDSegAddSeg3;
+        private System.Windows.Forms.Label LabelLEDtoSeg3;
+        private System.Windows.Forms.Button ButtonLEDSegAddSeg4;
+        private System.Windows.Forms.Label LabelLEDtoSeg4;
+        private System.Windows.Forms.Button ButtonLEDSegAddSeg5;
+        private System.Windows.Forms.Label LabelLEDtoSeg5;
+        private System.Windows.Forms.Button ButtonLEDSegAddSeg6;
+        private System.Windows.Forms.Label LabelLEDtoSeg6;
+        private System.Windows.Forms.Button ButtonLEDSegAddSeg7;
+        private System.Windows.Forms.Label LabelLEDtoSeg7;
+        private System.Windows.Forms.Button ButtonLEDSegAddSeg8;
+        private System.Windows.Forms.Label LabelLEDtoSeg8;
+        private System.Windows.Forms.Button ButtonLEDSegAddSeg9;
+        private System.Windows.Forms.Label LabelLEDtoSeg9;
+        private System.Windows.Forms.Button ButtonLEDSegDelSeg10;
+        private System.Windows.Forms.Label LabelLEDtoSeg10;
+        private System.Windows.Forms.Button ButtonLEDSegDelSeg2;
+        private System.Windows.Forms.Button ButtonLEDSegDelSeg3;
+        private System.Windows.Forms.Button ButtonLEDSegDelSeg4;
+        private System.Windows.Forms.Button ButtonLEDSegDelSeg5;
+        private System.Windows.Forms.Button ButtonLEDSegDelSeg6;
+        private System.Windows.Forms.Button ButtonLEDSegDelSeg7;
+        private System.Windows.Forms.Button ButtonLEDSegDelSeg8;
+        private System.Windows.Forms.Button ButtonLEDSegDelSeg9;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem öffnenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem speichernToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem speichernToolStripMenuItem1;
     }
 }
 

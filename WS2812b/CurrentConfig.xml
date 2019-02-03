@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <HW-Settings>
+    <MaxLEDS>300</MaxLEDS>
+    <ArduinoPin>8</ArduinoPin>
+    <ComPort>7</ComPort>
+  </HW-Settings>
+  <SegmentSettings>
+    <StartSeg0>0</StartSeg0>
+    <EndsSeg0>0</EndsSeg0>
+    <StartSeg1>0</StartSeg1>
+    <EndsSeg1>0</EndsSeg1>
+    <StartSeg2>0</StartSeg2>
+    <EndsSeg2>0</EndsSeg2>
+    <StartSeg3>0</StartSeg3>
+    <EndsSeg3>0</EndsSeg3>
+    <StartSeg4>0</StartSeg4>
+    <EndsSeg4>0</EndsSeg4>
+    <StartSeg5>0</StartSeg5>
+    <EndsSeg5>0</EndsSeg5>
+    <StartSeg6>0</StartSeg6>
+    <EndsSeg6>0</EndsSeg6>
+    <StartSeg7>0</StartSeg7>
+    <EndsSeg7>0</EndsSeg7>
+    <StartSeg8>0</StartSeg8>
+    <EndsSeg8>0</EndsSeg8>
+    <StartSeg9>0</StartSeg9>
+    <EndsSeg9>0</EndsSeg9>
+  </SegmentSettings>
+</Config>
