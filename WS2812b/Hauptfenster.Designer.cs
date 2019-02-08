@@ -251,7 +251,7 @@
             this.NumericUDSeg10 = new System.Windows.Forms.NumericUpDown();
             this.LabelLEDfromSeg10 = new System.Windows.Forms.Label();
             this.TabKonfig = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.ListboxModi = new System.Windows.Forms.ListBox();
             this.ComboBoxComPort = new System.Windows.Forms.ComboBox();
             this.ComboBoxArduinoPIN = new System.Windows.Forms.ComboBox();
             this.TextBoxConfLEDCount = new System.Windows.Forms.TextBox();
@@ -3123,7 +3123,7 @@
             // 
             // TabKonfig
             // 
-            this.TabKonfig.Controls.Add(this.listBox1);
+            this.TabKonfig.Controls.Add(this.ListboxModi);
             this.TabKonfig.Controls.Add(this.ComboBoxComPort);
             this.TabKonfig.Controls.Add(this.ComboBoxArduinoPIN);
             this.TabKonfig.Controls.Add(this.TextBoxConfLEDCount);
@@ -3138,15 +3138,15 @@
             this.TabKonfig.Text = "Konfiguration";
             this.TabKonfig.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // ListboxModi
             // 
-            this.listBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(147, 134);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(463, 244);
-            this.listBox1.TabIndex = 12;
+            this.ListboxModi.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListboxModi.FormattingEnabled = true;
+            this.ListboxModi.ItemHeight = 16;
+            this.ListboxModi.Location = new System.Drawing.Point(147, 134);
+            this.ListboxModi.Name = "ListboxModi";
+            this.ListboxModi.Size = new System.Drawing.Size(463, 244);
+            this.ListboxModi.TabIndex = 12;
             // 
             // ComboBoxComPort
             // 
@@ -3155,6 +3155,7 @@
             this.ComboBoxComPort.Name = "ComboBoxComPort";
             this.ComboBoxComPort.Size = new System.Drawing.Size(100, 21);
             this.ComboBoxComPort.TabIndex = 3;
+            this.ComboBoxComPort.Leave += new System.EventHandler(this.ConfigToFile);
             // 
             // ComboBoxArduinoPIN
             // 
@@ -3173,6 +3174,7 @@
             this.ComboBoxArduinoPIN.Name = "ComboBoxArduinoPIN";
             this.ComboBoxArduinoPIN.Size = new System.Drawing.Size(99, 21);
             this.ComboBoxArduinoPIN.TabIndex = 2;
+            this.ComboBoxArduinoPIN.Leave += new System.EventHandler(this.ConfigToFile);
             // 
             // TextBoxConfLEDCount
             // 
@@ -3180,6 +3182,7 @@
             this.TextBoxConfLEDCount.Name = "TextBoxConfLEDCount";
             this.TextBoxConfLEDCount.Size = new System.Drawing.Size(100, 20);
             this.TextBoxConfLEDCount.TabIndex = 1;
+            this.TextBoxConfLEDCount.Leave += new System.EventHandler(this.ConfigToFile);
             // 
             // LabelConfComPort
             // 
@@ -3234,21 +3237,21 @@
             // öffnenToolStripMenuItem
             // 
             this.öffnenToolStripMenuItem.Name = "öffnenToolStripMenuItem";
-            this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.öffnenToolStripMenuItem.Text = "Öffnen";
             this.öffnenToolStripMenuItem.Click += new System.EventHandler(this.öffnenToolStripMenuItem_Click);
             // 
             // speichernToolStripMenuItem
             // 
             this.speichernToolStripMenuItem.Name = "speichernToolStripMenuItem";
-            this.speichernToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.speichernToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.speichernToolStripMenuItem.Text = "Speichern";
             // 
             // speichernToolStripMenuItem1
             // 
             this.speichernToolStripMenuItem1.Name = "speichernToolStripMenuItem1";
-            this.speichernToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
-            this.speichernToolStripMenuItem1.Text = "Speichern";
+            this.speichernToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.speichernToolStripMenuItem1.Text = "Speichern unter";
             // 
             // FormWS812
             // 
@@ -3553,7 +3556,7 @@
         private System.Windows.Forms.Label LabelModiSeg9;
         private System.Windows.Forms.ListBox ListBoxModiSeg10;
         private System.Windows.Forms.Label LabelModiSeg10;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox ListboxModi;
         private System.Windows.Forms.Label LabelLEDtoSeg1;
         private System.Windows.Forms.Button ButtonLEDSegAddSeg1;
         private System.Windows.Forms.Button ButtonLEDSegAddSeg2;

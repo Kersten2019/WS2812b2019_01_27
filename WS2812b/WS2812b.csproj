@@ -62,16 +62,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs" />
     <Compile Include="Hauptfenster.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Hauptfenster.Designer.cs">
       <DependentUpon>Hauptfenster.cs</DependentUpon>
     </Compile>
+    <Compile Include="INIFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RGB-Change.cs" />
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="Hauptfenster.resx">
       <DependentUpon>Hauptfenster.cs</DependentUpon>
@@ -87,6 +86,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <None Include="Konfig.ini" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,10 +116,6 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="CurrentConfig.xml" />
-    <Content Include="DefaultConfig.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

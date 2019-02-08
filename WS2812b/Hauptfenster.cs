@@ -8,12 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using System.Xml.Serialization;
+using ReadWriteConfigFiles;
 
 namespace WS2812b
 {
+
+
     public partial class FormWS812 : Form
     {
+        //Instanz bder Klasse inifile
+
+
+
         //Active Segment zum Verarbeiten in den Panel Farben Methoden
         int ActiveSegment = 1;
         // Anzahl der activen Segmente 0 = 1 Segment wird wegen dem ESP gebraucht mit 0
@@ -22,6 +28,11 @@ namespace WS2812b
         int ActivateNextSegment = 1;
         //Um vorheriges Panel zu aktivieren
         int ActivatePrevSegment = 0;
+        //Actives NumericUD 
+        string SelectedNumericUD;
+
+        int ActiveLEDSeg;
+        int PrevLEDSeg;
 
         //Möglicheübergabewerte an ESP
         string ESPSeg;
@@ -29,7 +40,8 @@ namespace WS2812b
         string ESPBright;
         string ESPSpeed;
         string ESPColor;
-
+        int ESPCOM;
+        int ESPPIN;
 
         //init Anzahl LEDS
         int LEDMax;
@@ -37,10 +49,14 @@ namespace WS2812b
         int[] SegStart = new int[10];
         int[] SegEnd = new int[10];
 
+        public string filename;
+
+
 
         public FormWS812()
         {
             InitializeComponent();
+
 
             //show list of valid com ports
             foreach (string s in System.IO.Ports.SerialPort.GetPortNames())
@@ -48,14 +64,20 @@ namespace WS2812b
                 ComboBoxComPort.Items.Add(s);
             }
 
-            //Config aus Default laden
-
-            LEDMax = 300; //Kannweg, wenn Wwrt aus XML kommt
-
-            // Auf allen Segmenten MAX LED bei NumericUD setzen
+             //prüfen ob es eine Konfig.ini gibt, wenn ja lesen, wenn nein, dann suchen
+             ChooseINI();
+            //File zu laden 
+            Readini();
+            
+            
+            
+            
+            
+            
+            
+            
+            // Auf allen Segmenten MAX LED bei NumericUD setzen und listbox kopieren
             SetAllNumericUDtoMaxLED();
-
-
 
 
         }
@@ -251,8 +273,8 @@ namespace WS2812b
             ActivatePrevSegment = 9;
             //Aktuelles Segment löschen
             DelSegment(ActiveSegment);
-            
-            
+
+
             //Controls auf aktivem Tab Deaktivieren
 
 
@@ -304,12 +326,6 @@ namespace WS2812b
 
         private void öffnenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openfiledialog = new OpenFileDialog();
-
-            if (openfiledialog.ShowDialog() == DialogResult.OK)
-            {
-                var path = openfiledialog.FileName;
-            }
 
         }
 
@@ -437,7 +453,7 @@ namespace WS2812b
                 SegStart[NextLEDSeg] = NewLEDSegStart;
 
                 //Werte in currentconfig schreiben
-                
+
                 //Wert der activen Segmente erhöhen und übergabe Wert nächstes Panel
                 ActiveSegmentsCount = ActiveSegmentsCount + 1;
                 ActivateNextSegment = ActivateNextSegment + 1;
@@ -605,16 +621,14 @@ namespace WS2812b
         {
 
         }
-        
+
         public void DelSegment(int ActiveSegment)
         {
 
             ActiveSegmentsCount = ActiveSegmentsCount - 1;
-            int OldLEDSegEnd;
-            int NewSegEnd;
+            //int OldLEDSegEnd;
+            //int NewSegEnd;
 
-            int ActiveLEDSeg;
-            int PrevLEDSeg;
 
             //Prev Segmet new end = Max LED
             //NumericUD auf aktuellen Segment identifizieren
@@ -624,16 +638,11 @@ namespace WS2812b
 
             //Aktives Array mit 0 füllen
             SegEnd[ActiveLEDSeg] = 0;
-            SegStart[ActiveLEDSeg] =0;
+            SegStart[ActiveLEDSeg] = 0;
 
             //Ende letztes Segmt in Arry schreiben
             PrevLEDSeg = ActiveLEDSeg - 1;
             SegEnd[ActiveLEDSeg] = LEDMax;
-
-
-
-
-
 
 
 
@@ -656,6 +665,8 @@ namespace WS2812b
         public void SetAllNumericUDtoMaxLED()
         {
             string SelectedNumericUD = "NumericUDSeg";
+            string Selectedlistbox = "ListBoxModiSeg";
+            ListBox sellistboxvorlage = (ListBox)this.Controls.Find("ListboxModi", true)[0];
             for (int i = 1; i < 11; i++)
             {
                 //alle NumericUD auf Max LED stellen
@@ -665,12 +676,71 @@ namespace WS2812b
                 SelNumericUD.Value = LEDMax;
                 //String wieder für Schleife zurück setzen
                 SelectedNumericUD = "NumericUDSeg";
+
+                //Alle Listboxen mit Wert aus Konfigtab füllen
+                Selectedlistbox = Selectedlistbox + (i.ToString());
+                ListBox sellistbox = (ListBox)this.Controls.Find(Selectedlistbox, true)[0];
+                sellistbox.Items.AddRange(sellistboxvorlage.Items);
+                Selectedlistbox = "ListBoxModiSeg";
             }
 
 
 
+        }
+
+        public void Readini()
+        {
+
+            INIFile inifile = new INIFile(filename);
+            string Value = inifile.GetValue("HW-Settings", "MaxLEDs");
+            //Anzahl an LEDs übergeben
+            LEDMax = Int32.Parse(Value);
+            TextBox seltextbox = (TextBox)this.Controls.Find("TextBoxConfLEDCount", true)[0];
+            seltextbox.Text = Value;
+            ComboBox selcomboxCom = (ComboBox)this.Controls.Find("ComboBoxComPort", true)[0];
+            selcomboxCom.Text = inifile.GetValue("HW-Settings", "ComPort");
+            ComboBox selcomboxESP = (ComboBox)this.Controls.Find("ComboBoxArduinoPIN", true)[0];
+            selcomboxESP.Text = inifile.GetValue("HW-Settings", "ArduinoPin");
+
+            ListBox sellistbox = (ListBox)this.Controls.Find("ListboxModi", true)[0];
+            int modusanzahl = Int32.Parse(inifile.GetValue("ModiSettings", "ModusCount"));
+            string aktuellermodus;
+
+            for (int i = 0; i < modusanzahl; i++)
+            {
+
+                aktuellermodus = "Modus" + i.ToString();
+                Value = inifile.GetValue("Modi", aktuellermodus);
+                sellistbox.Items.Add(aktuellermodus + " = " + Value);
+                Value = "";
+            }
 
         }
+
+        public void ChooseINI()
+        {
+            OpenFileDialog openfiledialog = new OpenFileDialog();
+            if (openfiledialog.ShowDialog() == DialogResult.OK)
+            {
+                filename = openfiledialog.FileName;
+            }
+        }
+
+        public void ConfigToFile(object sender, EventArgs e)
+        {
+            INIFile inifile = new INIFile(filename);
+
+            TextBox seltextbox = (TextBox)this.Controls.Find("TextBoxConfLEDCount", true)[0];
+            string Value = seltextbox.Text;
+            inifile.SetValue("HW-Settings", "MaxLEDs", Value);
+            ComboBox selcomboxCom = (ComboBox)this.Controls.Find("ComboBoxComPort", true)[0];
+            Value = selcomboxCom.Text;
+            inifile.SetValue("HW-Settings", "ComPort", Value);
+            ComboBox selcomboxESP = (ComboBox)this.Controls.Find("ComboBoxArduinoPIN", true)[0];
+            Value = selcomboxESP.Text;
+            inifile.SetValue("HW-Settings", "ArduinoPin", Value);  //Über die File Classe die Werte füllen
+        }
+
     }
 }
-
+ 
